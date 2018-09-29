@@ -64,17 +64,41 @@
         <legend class="user-review__heading">Ваше общее впечатление:</legend>
         <form class="user-review__form--user-impression" action="echo.htmlacademy.ru" method="post">
           <p class="user-review__item--user-impression">
-            <input class="user-review__positive" id="positive" name="impression" type="radio" value="positive" checked>
-            <label class="user-review__positive-description">Скорее положительное</label>
+            <input class="user-review__radio--positive" id="positive" name="impression" type="radio" value="positive" checked>
+            <label class="user-review__radio-description--positive">Скорее положительное</label>
           </p>
           <p class="user-review__item--user-impression">
-            <input class="user-review__negative" id="negative" name="impression" type="radio" value="negative">
-            <label class="user-review__negative-description">Скорее отрицательное</label>
+            <input class="user-review__radio--negative" id="negative" name="impression" type="radio" value="negative">
+            <label class="user-review__radio-description--negative">Скорее отрицательное</label>
           </p>
           <p class="user-review__item--user-impression">
-            <input class="user-review__unknown" id="unknown" name="impression" type="radio" value="unknown">
-            <label class="user-review__unknown-description">Затрудняюсь ответить</label>
+            <input class="user-review__radio--unknown" id="unknown" name="impression" type="radio" value="unknown">
+            <label class="user-review__radio-description--unknown">Затрудняюсь ответить</label>
           </p>
+      </fieldset>
+      <fieldset class="user-review">
+        <legend class="user-review__heading">Посещённые достопримечательности:</legend>
+        <form class="user-review__form--user-sights" action="echo.htmlacademy.ru" method="post">
+          <p class="user-review__item--user-sights">
+            <input class="user-review__checkbox--devbridge" id="devbridge" name="devbridge" type="checkbox" value="devbridge" checked>
+            <label class="user-review__checkbox-description--devbridge">Мост Дъявола</label>
+          </p>
+          <p class="user-review__item--user-sights">
+            <input class="user-review__checkbox--bellmountain" id="bellmountain" name="bellmountain" type="checkbox" value="bellmountain" checked>
+            <label class="user-review__checkbox-description--bellmountain">Гора-Колокол</label>
+          </p>
+          <p class="user-review__item--user-sights">
+            <input class="user-review__checkbox--slidepark" id="slidepark" name="slidepark" type="checkbox" value="slidepark" checked>
+            <label class="user-review__checkbox-description--slidepark">Слайд-парк</label>
+          </p>
+          <p class="user-review__item--user-sights">
+            <input class="user-review__checkbox--redrocks" id="redrocks" name="redrocks" type="checkbox" value="redrocks">
+            <label class="user-review__checkbox-description--redrocks">Красные скалы</label>
+          </p>
+      </fieldset>
+      <fieldset class="user-review">
+        <legend class="user-review__heading">Опишите свои эмоции:</legend>
+        <textarea class="user-review_emotions" id="emotions" name="emotions">Опишите подробно все свои восторги</textarea>
       </fieldset>
 
     </main>
