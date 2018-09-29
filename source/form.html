@@ -4,22 +4,24 @@
     <meta charset="utf-8">
     <title>Седона</title>
   </head>
+
   <body>
+
     <header class="page-header">
       <img class="page-header__logo" src="#" width="" height="" alt="Логотип города Седона">
       <nav class="page-header__nav main-nav">
         <button class="main-nav__button--open" type="button">Открыть меню</button>
         <ul class="main-nav__menu menu-list">
-          <li class="menu-list__item"></li>
+          <li class="menu-list__item">
            <a class="menu-list__link" href="#">Главная</a>
           </li>
-          <li class="menu-list__item"></li>
+          <li class="menu-list__item">
            <a class="menu-list__link" href="#">Фото и видео</a>
           </li>
-          <li class="menu-list__item"></li>
+          <li class="menu-list__item">
            <a class="menu-list__link" href="#">Форма отзыва</a>
           </li>
-          <li class="menu-list__item"></li>
+          <li class="menu-list__item">
            <a class="menu-list__link" href="#">HTMLAcademy</a>
           </li>
         </ul>
@@ -27,9 +29,10 @@
       </nav>
       <img class="page-header__landscape" src="#" width="" height="" alt="Вид на город седона">
     </header>
+
     <main class="page-main">
       <h1 class="reviews-heading">Оставьте свой отзыв</h1>
-      <p class="reviews-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+      <p class="reviews-intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
       <fieldset class="user-review">
         <legend class="user-review__heading">Представьтесь:</legend>
         <form class="user-review__form--user-info" action="echo.htmlacademy.ru" method="post">
@@ -52,11 +55,11 @@
         <form class="user-review__form--user-contacts" action="echo.htmlacademy.ru" method="post">
           <p class="user-review__item--user-contacts">
             <label class="user-review__description--phone" for="phone">Контактный телефон<sup>*</sup>:</label>
-            <input class-"user-review__field--phone-field" id="phone" type="tel" value="Введите телефон">
+            <input class="user-review__field--phone-field" id="phone" type="tel" value="Введите телефон">
           </p>
           <p class="user-review__item--user-contacts">
             <label class="user-review__description--email" for="email">Электронная почта<sup>*</sup>:</label>
-            <input class-"user-review__field--email-field" id="email" type="email" value="Введите e-mail">
+            <input class="user-review__field--email-field" id="email" type="email" value="Введите e-mail">
           </p>
         </form>
       </fieldset>
@@ -75,6 +78,7 @@
             <input class="user-review__radio--unknown" id="unknown" name="impression" type="radio" value="unknown">
             <label class="user-review__radio-description--unknown">Затрудняюсь ответить</label>
           </p>
+        </form>
       </fieldset>
       <fieldset class="user-review">
         <legend class="user-review__heading">Посещённые достопримечательности:</legend>
@@ -95,6 +99,7 @@
             <input class="user-review__checkbox--redrocks" id="redrocks" name="redrocks" type="checkbox" value="redrocks">
             <label class="user-review__checkbox-description--redrocks">Красные скалы</label>
           </p>
+        </form>
       </fieldset>
       <fieldset class="user-review">
         <legend class="user-review__heading">Опишите свои эмоции:</legend>
@@ -102,6 +107,7 @@
       </fieldset>
       <button class="button--user-review" type="submit">Отправить отзыв</button>
     </main>
+
     <footer class="page-footer">
       <p class="page-footer__hashtag">#VisitSedona</p>
       <ul class="page-footer__socials socials-list">
@@ -120,5 +126,6 @@
         <img class="page-footer_-copyright-logo" src="#" width="" height="" alt="Логотип HTML Академии">
       </a>
     </footer>
+
   </body>
 </html>
