@@ -29,7 +29,6 @@
         </ul>
         <button class="main-nav__button main-nav__button--close" type="button">Закрыть меню</button>
       </nav>
-      <img class="page-header__landscape" src="#" width="" height="" alt="Вид на город седона">
     </header>
 
     <main class="page-main">
@@ -44,7 +43,7 @@
           </p>
           <p class="user-review__item user-review__item--user-info">
             <label class="user-review__description user-review__description--surname" for="surname">Фамилия<sup>*</sup>:</label>
-            <input class="user-review__field--surname-field user-review__field--surname-field" id="surname" name="surname" type="text" value="Иванов">
+            <input class="user-review__field user-review__field--surname-field" id="surname" name="surname" type="text" value="Иванов">
           </p>
           <p class="user-review__item user-review__item--user-info">
             <label class="user-review__description user-review__description--patronymic" for="patronymic">Отчество<sup>*</sup>:</label>
@@ -100,7 +99,7 @@
           <legend class="user-review__heading">Опишите свои эмоции:</legend>
           <textarea class="user-review_emotions" id="emotions" name="emotions">Опишите подробно все свои восторги</textarea>
         </fieldset>
-        <button class="button--user-review" type="submit">Отправить отзыв</button>
+        <button class="button user-review__button" type="submit">Отправить отзыв</button>
       </form>
     </main>
 
@@ -108,32 +107,32 @@
       <p class="page-footer__hashtag">#VisitSedona</p>
       <ul class="page-footer__socials socials-list">
         <li class="socials-list__item">
-          <a class="socials-list__link--twitter" href="#">Твиттер</a>
+          <a class="socials-list__link socials-list__link--twitter" href="#">Твиттер</a>
         </li>
         <li class="socials-list__item">
-          <a class="socials-list__link--facebook" href="#">Фейсбук</a>
+          <a class="socials-list__link socials-list__link--facebook" href="#">Фейсбук</a>
         </li>
         <li class="socials-list__item">
-          <a class="socials-list__link--youtube" href="#">Ютьюб</a>
+          <a class="socials-list__link socials-list__link--youtube" href="#">Ютьюб</a>
         </li>
       </ul>
       <p class="page-footer__copyright">Разработано</p>
       <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Сайт HTML Академии
-        <img class="page-footer_-copyright-logo" src="#" width="" height="" alt="Логотип HTML Академии">
+        <img class="page-footer__copyright-logo" src="#" width="" height="" alt="Логотип HTML Академии">
       </a>
     </footer>
 
-    <section class="popup--failure">
+    <section class="popup popup--failure">
       <h2 class="visually-hidden">Ошибка в заполнении полей формы</h2>
-      <p class="popup-intro--failure">Что-то пошло не так!</p>
-      <p class="popup-content--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="button--popup-failure" type="button">ОК</button>
+      <p class="popup-intro popup-intro--failure">Что-то пошло не так!</p>
+      <p class="popup-content popup-content--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button popup-failure__button" type="button">ОК</button>
     </section>
-    <section class="popup--success">
+    <section class="popup popup--success">
       <h2 class="visually-hidden">Успешная отправка отзыва</h2>
-      <p class="popup-intro--success">Ваш отзыв отправлен!</p>
-      <p class="popup-content--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="button--popup-success" type="button">Закрыть окно</button>
+      <p class="popup-intro popup-intro--success">Ваш отзыв отправлен!</p>
+      <p class="popup-content popup-content--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="button popup-success__button" type="button">Закрыть окно</button>
     </section>
   </body>
 </html>
