@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="page-body">
 
-    <header class="page-header">
-      <img class="page-header__logo" src="#" width="" height="" alt="Логотип города Седона">
-      <nav class="page-header__nav main-nav">
+    <header class="page-body__header main-header">
+      <img class="main-header__logo" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
+      <nav class="main-header__nav main-nav">
         <button class="main-nav__button main-nav__button--open" type="button">Открыть меню</button>
         <ul class="main-nav__menu menu-list">
           <li class="menu-list__item">
@@ -28,18 +29,19 @@
         <button class="main-nav__button main-nav__button--close" type="button">Закрыть меню</button>
       </nav>
     </header>
-    <main class="page-main">
+
+    <main class="page-body__main">
       <h1 class="visually-hidden">О Седоне</h1>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <p class="features__slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="features__slogan">Седона - небольшой<br>городок в Аризоне,<br>заслуживающий большего!</p>
         <p class="features__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="features__list">
-          <li class="features__item">
+          <li class="features__item features__item--blueback">
             <h3 class="features__heading features__heading--white">Настоящий городок</h3>
             <p class="features__number features__number--white">- №1 -</p>
             <p class="features__description features__description--white">Седона не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="features__picture" src="#" width="" height="" alt="Вид Седоны">
+            <img class="features__picture" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Вид Седоны">
               <ul class="features__details details-list">
                 <li class="details-list__item">
                   <h4 class="details-list__heading">Жильё</h4>
@@ -51,27 +53,27 @@
                 </li>
                 <li class="details-list__item">
                   <h4 class="details-list__heading">Еда</h4>
-                  <p class="details-list__description">Всегда заказывайте фирменый бургер, вы не разочаруетесь!</p>
+                  <p class="details-list__description features__description--white">Всегда заказывайте фирменый бургер, вы не разочаруетесь!</p>
                 </li>
               </ul>
           </li>
-          <li class="features__item">
-            <h3 class="features__heading features__heading--white">Там есть мост дъявола</h3>
+          <li class="features__item features__item--blueback">
+            <h3 class="features__heading features__heading--white">Там есть мост дьявола</h3>
             <p class="features__number features__number--white">- №2 -</p>
             <p class="features__description features__description--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="features__picture" src="#" width="" height="" alt="Мост дъявола">
+            <img class="features__picture" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дъявола">
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--greyback">
             <h3 class="features__heading features__heading--black">Небольшая площадь</h3>
             <p class="features__number features__number--black">- №3 -</p>
             <p class="features__description features__description--black">Все интересные места находятся очень близко</p>
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--greyback">
             <h3 class="features__heading features__heading--black">Красивая дорога</h3>
             <p class="features__number features__number--black">- №4 -</p>
             <p class="features__description features__description--black">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--greyback">
             <h3 class="features__heading features__heading--black">Мало туристов</h3>
             <p class="features__number features__number--black">- №5 -</p>
             <p class="features__description features__description--black">Большинство едет в Гранд Каньон и толпится там</p>
@@ -82,14 +84,14 @@
         <h2 class="visually-hidden">Забронировать отель в Седоне</h2>
         <p class="hotel-booking__teaser">Заинтересовались?</p>
         <p class="hotel-booking__intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button hotel-booking__button" href="#">Найти гостиницу</a>
+        <a class="button button--hotel-booking" href="#">Найти гостиницу</a>
         <iframe class="hotel-booking__map" src="#"></iframe>
       </section>
     </main>
 
-    <footer class="page-footer">
-      <p class="page-footer__hashtag">#VisitSedona</p>
-      <ul class="page-footer__socials socials-list">
+    <footer class="page-body__footer main-footer">
+      <p class="main-footer__hashtag">#VisitSedona</p>
+      <ul class="main-footer__socials socials-list">
         <li class="socials-list__item">
           <a class="socials-list__link socials-list__link--twitter" href="#">Твиттер</a>
         </li>
@@ -100,9 +102,9 @@
           <a class="socials-list__link socials-list__link--youtube" href="#">Ютьюб</a>
         </li>
       </ul>
-      <p class="page-footer__copyright">Разработано</p>
-      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Сайт HTML Академии
-        <img class="page-footer_copyright-logo" src="#" width="" height="" alt="Логотип HTML Академии">
+      <p class="main-footer__copyright">Разработано</p>
+      <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Сайт HTML Академии
+        <img class="main-footer_copyright-logo" src="img/logo-htmlacademy.svg" width="28" height="33" alt="Логотип HTML Академии">
       </a>
     </footer>
   </body>

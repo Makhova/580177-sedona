@@ -1,0 +1,29 @@
+.hotel-booking {
+  @include zero-indent;
+  padding-top: 32px;
+  text-align: $center;
+}
+
+.hotel-booking__teaser {
+  @include zero-indent;
+  margin-bottom: 25px;
+  @include main-padding;
+  width: $main-width;
+  font-weight: $bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.hotel-booking__intro {
+  @include zero-indent;
+  margin-bottom: 35px;
+  @include main-padding;
+  width: $main-width;
+  @include paragraph-font;
+}
+
+.hotel-booking__map {
+  margin-bottom: 40px;
+  width: 320px;
+  height: 350px;
+}

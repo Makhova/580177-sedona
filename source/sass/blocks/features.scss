@@ -1,0 +1,80 @@
+.features {
+  @include zero-indent;
+}
+
+.features__slogan {
+  @include zero-indent;
+  margin-top: 43px;
+  margin-bottom: 30px;
+  width: $main-width;
+  @include heading-font;
+  color: #000000;
+  text-align: $center;
+}
+
+.features__intro {
+  @include zero-indent;
+  margin-bottom: 43px;
+  width: $main-width;
+  text-align: $center;
+  @include paragraph-font;
+}
+
+.features__list {
+  @include zero-indent;
+  @include list;
+}
+
+.features__item {
+  @include zero-indent;
+  text-align: $center;
+}
+
+.features__item--blueback {
+  padding-top: 43px;
+  color: $white;
+  background-color: $blue;
+}
+
+.features__item--greyback {
+  padding-top: 30px;
+  background-color: $grey;
+}
+
+.features__heading {
+  @include zero-indent;
+  margin-bottom: 14px;
+  @include main-padding;
+  width: $main-width;
+  @include heading-font;
+}
+
+.features__number {
+  @include zero-indent;
+  margin-bottom: 16px;
+  @include paragraph-font;
+}
+
+.features__description {
+  @include zero-indent;
+  @include main-padding;
+  width: $main-width;
+  @include paragraph-font;
+}
+
+.features__description--white {
+  padding-bottom: 40px;
+}
+
+.features__description--black {
+  padding-bottom: 28px;
+}
+
+.features__details {
+  @include zero-indent;
+}
+
+.features__picture {
+  width: 320px;
+  height: 260px;
+}

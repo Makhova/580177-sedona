@@ -1,0 +1,28 @@
+.socials-list {
+  @include list;
+}
+
+.socials-list__item {
+  margin: 0;
+  padding: 10px;
+  width: 26px;
+  text-align: $center;
+  background: $blue;
+}
+
+.socials-list__link {
+  @include icon-link;
+  background: no-repeat 50% 50%;
+}
+
+.socials-list__link--twitter {
+  background: url("../img/icon-twitter.svg");
+}
+
+.socials-list__link--facebook {
+  background: url("../img/icon-facebook.svg");
+}
+
+.socials-list__link--youtube {
+  background: url("../img/icon-youtube.svg");
+}

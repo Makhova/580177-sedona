@@ -1,0 +1,50 @@
+.photo-list {
+  @include list;
+}
+
+.photo-list__item {
+  @include zero-indent;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.photo-list__photo {
+  @include zero-indent;
+  @include main-padding;
+  width: $main-width;
+}
+
+.photo-list__picture {
+  margin-bottom: 18px;
+  width: $main-width;
+  height: 280px;
+}
+
+.photo-list__description {
+  @include zero-indent;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo-list__heading {
+  @include zero-indent;
+  font-weight: $bold;
+  color: #333333;
+}
+
+.photo-list__author {
+  @include zero-indent;
+  text-transform: none;
+}
+
+.photo-list__like {
+  display: block;
+  @include zero-indent;
+  margin-right: 15px;
+}
+
+.photo-list__like-number {
+  display: block;
+  @include zero-indent;
+  font-weight: $bold;
+}

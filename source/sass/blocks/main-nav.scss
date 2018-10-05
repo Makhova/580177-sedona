@@ -1,0 +1,15 @@
+.main-nav {
+  @include zero-indent;
+  width: 320px;
+}
+
+.main-nav__button {
+  width: 23px;
+  height: 21px;
+  font-size: 0;
+  background: no-repeat;
+}
+
+.main-nav__menu {
+  @include zero-indent;
+}

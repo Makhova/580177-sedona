@@ -1,0 +1,92 @@
+.user-review {
+  @include zero-indent;
+}
+
+.user-review__fieldset {
+  @include zero-indent;
+  @include main-padding;
+  border: none;
+}
+
+.user-review__heading {
+  @include zero-indent;
+  margin-bottom: 21px;
+  padding-top: 21px;
+  @include heading-font;
+  text-align: $center;
+}
+
+.user-review__item {
+  @include zero-indent;
+    &:last-child {
+      margin-bottom: 28px;
+    }
+}
+
+.user-review__description {
+  display: block;
+  @include zero-indent;
+  margin-right: 15px;
+  width: 75px;
+  @include paragraph-font;
+}
+
+.user-review__description--name {
+  width: 35px;
+}
+
+.user-review__description--phone,
+.user-review__description--email {
+  padding-left: 20px;
+  width: 260px;
+}
+
+.user-review__field {
+  display: block;
+  @include zero-indent;
+  padding: 20px;
+  border: none;
+  width: 190px;
+  @include heading-font;
+  background-color: $grey;
+}
+
+.user-review__field--name-field {
+  width: 230px;
+}
+
+.user-review__field--phone-field {
+  width: $main-width;
+}
+
+.user-review__field--email-field {
+  width: $main-width;
+}
+
+.user-review__radio,
+.user-review__checkbox {
+  display: block;
+  @include zero-indent;
+  margin-right: 25px;
+}
+
+.user-review__radio-description,
+.user-review__checkbox-description {
+  display: block;
+  @include zero-indent;
+  width: $main-width;
+  @include heading-font;
+  text-transform: none;
+}
+
+.user-review__emotions {
+  @include zero-indent;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 260px;
+  min-height: 160px;
+  border: none;
+  background-color: $grey;
+  @include heading-font
+}

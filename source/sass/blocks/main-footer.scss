@@ -1,0 +1,27 @@
+.main-footer {
+  padding-bottom: 25px;
+}
+
+.main-footer__hashtag {
+  width: $main-width;
+  font-weight: $bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: $center;
+}
+
+.main-footer__socials {
+  @include zero-indent;
+  margin-bottom: 40px;
+}
+
+.main-footer__copyright {
+  @include zero-indent;
+  margin-right: 10px;
+  width: 95px;
+  @include paragraph-font;
+}
+
+.main-footer__copyright-link {
+  @include icon-link;
+}

@@ -1,0 +1,8 @@
+.reviews-intro {
+  @include zero-indent;
+  margin-bottom: 18px;
+  @include main-padding;
+  width: $main-width;
+  @include paragraph-font;
+  text-align: $center;
+}
