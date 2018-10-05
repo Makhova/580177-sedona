@@ -1,9 +1,9 @@
 .page-heading {
   @include zero-indent;
+  @include main-padding;
+  @include heading-font;
   margin-top: 40px;
   margin-bottom: 30px;
-  @include main-padding;
   width: $main-width;
-  @include heading-font;
   text-align: $center;
 }

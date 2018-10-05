@@ -6,8 +6,8 @@
 
 .hotel-booking__teaser {
   @include zero-indent;
-  margin-bottom: 25px;
   @include main-padding;
+  margin-bottom: 25px;
   width: $main-width;
   font-weight: $bold;
   font-size: 20px;
@@ -16,10 +16,10 @@
 
 .hotel-booking__intro {
   @include zero-indent;
-  margin-bottom: 35px;
   @include main-padding;
-  width: $main-width;
   @include paragraph-font;
+  margin-bottom: 35px;
+  width: $main-width;
 }
 
 .hotel-booking__map {

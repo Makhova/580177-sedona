@@ -4,10 +4,10 @@
 
 .photos__intro {
   @include zero-indent;
-  margin-bottom: 18px;
   @include main-padding;
-  width: $main-width;
   @include paragraph-font;
+  margin-bottom: 18px;
+  width: $main-width;
   text-align: $center;
 }
 

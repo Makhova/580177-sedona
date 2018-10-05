@@ -17,9 +17,9 @@
 
 .main-footer__copyright {
   @include zero-indent;
+  @include paragraph-font;
   margin-right: 10px;
   width: 95px;
-  @include paragraph-font;
 }
 
 .main-footer__copyright-link {

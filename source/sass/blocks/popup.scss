@@ -1,15 +1,15 @@
 .popup {
   @include zero-indent;
-  padding-top: 45px;
   @include main-padding;
+  padding-top: 45px;
   width: $main-width;
   text-align: $center;
 }
 
 .popup-intro {
   @include zero-indent;
-  margin-bottom: 33px;
   @include main-padding;
+  margin-bottom: 33px;
   width: $main-width;
   font-weight: $bold;
   font-size: 20px;
@@ -18,8 +18,8 @@
 
 .popup-content {
   @include zero-indent;
-  margin-bottom: 24px;
   @include main-padding;
-  width: $main-width;
   @include paragraph-font;
+  margin-bottom: 24px;
+  width: $main-width;
 }

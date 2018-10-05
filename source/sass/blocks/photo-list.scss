@@ -38,13 +38,13 @@
 }
 
 .photo-list__like {
-  display: block;
   @include zero-indent;
+  display: block;
   margin-right: 15px;
 }
 
 .photo-list__like-number {
-  display: block;
   @include zero-indent;
+  display: block;
   font-weight: $bold;
 }

@@ -5,18 +5,18 @@
 
 .video-teaser {
   @include zero-indent;
-  margin-bottom: 30px;
   @include main-padding;
-  width: $main-width;
   @include heading-font;
+  margin-bottom: 30px;
+  width: $main-width;
   text-align: $center;
 }
 .video-intro {
   @include zero-indent;
-  margin-bottom: 35px;
   @include main-padding;
-  width: $main-width;
   @include paragraph-font;
+  margin-bottom: 35px;
+  width: $main-width;
   text-align: $center;
 }
 

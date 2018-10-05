@@ -1,6 +1,6 @@
 .details-list {
-  padding-top: 38px;
   @include list;
+  padding-top: 38px;
   background-color: $white;
 }
 
@@ -14,13 +14,13 @@
 
 .details-list__heading {
   @include zero-indent;
+  @include heading-font;
   margin-bottom: 18px;
   width: 230px;
-  @include heading-font;
 }
 
 .details-list__description {
   @include zero-indent;
-  width: 210px;
   @include paragraph-font;
+  width: 210px;
 }
