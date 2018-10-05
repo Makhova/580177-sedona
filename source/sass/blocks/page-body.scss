@@ -32,10 +32,10 @@
 }
 
 @mixin button {
+  @include main-padding;
   box-sizing: border-box;
   display: inline-block;
   margin: 0;
-  @include main-padding;
   padding-top: 17px;
   padding-bottom: 17px;
   border: none;

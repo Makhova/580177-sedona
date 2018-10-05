@@ -18,9 +18,10 @@
 
 .user-review__item {
   @include zero-indent;
-    &:last-child {
-      margin-bottom: 28px;
-    }
+
+  &:last-child {
+    margin-bottom: 28px;
+  }
 }
 
 .user-review__description {
@@ -81,7 +82,7 @@
 
 .user-review__emotions {
   @include zero-indent;
-  @include heading-font
+  @include heading-font;
   margin-bottom: 50px;
   padding-top: 20px;
   padding-left: 20px;
