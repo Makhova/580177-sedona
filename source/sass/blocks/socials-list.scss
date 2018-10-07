@@ -13,16 +13,16 @@
 .socials-list__link {
   @include icon-link;
   background: no-repeat 50% 50%;
-}
 
-.socials-list__link--twitter {
-  background: url("../img/icon-twitter.svg");
-}
+  &--twitter {
+    background: url("../img/icon-twitter.svg");
+  }
 
-.socials-list__link--facebook {
-  background: url("../img/icon-facebook.svg");
-}
+  &--facebook {
+    background: url("../img/icon-facebook.svg");
+  }
 
-.socials-list__link--youtube {
-  background: url("../img/icon-youtube.svg");
+  &--youtube {
+    background: url("../img/icon-youtube.svg");
+  }
 }

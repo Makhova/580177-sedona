@@ -1,5 +1,7 @@
 .user-review {
   @include zero-indent;
+  padding-top: 21px;
+  padding-bottom: 74px;
 }
 
 .user-review__fieldset {
@@ -12,7 +14,6 @@
   @include zero-indent;
   @include heading-font;
   margin-bottom: 21px;
-  padding-top: 21px;
   text-align: $center;
 }
 
@@ -30,16 +31,16 @@
   display: block;
   margin-right: 15px;
   width: 75px;
-}
 
-.user-review__description--name {
-  width: 35px;
-}
+  &--name {
+    width: 35px;
+  }
 
-.user-review__description--phone,
-.user-review__description--email {
-  padding-left: 20px;
-  width: 260px;
+  &--phone,
+  &--email {
+    padding-left: 20px;
+    width: 260px;
+  }
 }
 
 .user-review__field {
@@ -50,18 +51,18 @@
   border: none;
   width: 190px;
   background-color: $grey;
-}
 
-.user-review__field--name-field {
-  width: 230px;
-}
+  &--name-field {
+    width: 230px;
+  }
 
-.user-review__field--phone-field {
-  width: $main-width;
-}
+  &--phone-field {
+    width: $main-width;
+  }
 
-.user-review__field--email-field {
-  width: $main-width;
+  &--email-field {
+    width: $main-width;
+  }
 }
 
 .user-review__radio,

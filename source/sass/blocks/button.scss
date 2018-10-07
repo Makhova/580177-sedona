@@ -2,22 +2,17 @@
   @include button;
   margin-right: 20px;
   margin-left: 20px;
-}
 
-.button--hotel-booking {
-  margin-bottom: 50px;
-}
+  &--user-review {
+    text-transform: uppercase;
+  }
 
-.button--user-review {
-  margin-bottom: 74px;
-  text-transform: uppercase;
-}
+  &--popup {
+    margin-bottom: 35px;
+    text-transform: uppercase;
+  }
 
-.button--popup {
-  margin-bottom: 35px;
-  text-transform: uppercase;
-}
-
-.button--popup-failure {
-  width: 180px;
+  &--popup-failure {
+    width: 180px;
+  }
 }

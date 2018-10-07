@@ -28,17 +28,17 @@
 .features__item {
   @include zero-indent;
   text-align: $center;
-}
 
-.features__item--blueback {
-  padding-top: 43px;
-  color: $white;
-  background-color: $blue;
-}
+  &--blueback {
+    padding-top: 43px;
+    color: $white;
+    background-color: $blue;
+  }
 
-.features__item--greyback {
-  padding-top: 30px;
-  background-color: $grey;
+  &--greyback {
+    padding-top: 30px;
+    background-color: $grey;
+  }
 }
 
 .features__heading {
@@ -60,14 +60,14 @@
   @include main-padding;
   @include paragraph-font;
   width: $main-width;
-}
 
-.features__description--white {
-  padding-bottom: 40px;
-}
+  &--white {
+    padding-bottom: 40px;
+  }
 
-.features__description--black {
-  padding-bottom: 28px;
+  &--black {
+    padding-bottom: 28px;
+  }
 }
 
 .features__details {
