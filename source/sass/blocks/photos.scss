@@ -1,0 +1,16 @@
+.photos {
+  @include zero-indent;
+}
+
+.photos__intro {
+  @include zero-indent;
+  @include main-padding;
+  @include paragraph-font;
+  margin-bottom: 18px;
+  width: $main-width;
+  text-align: $center;
+}
+
+.photos__all-photo {
+  @include zero-indent;
+}

@@ -1,0 +1,25 @@
+.popup {
+  @include zero-indent;
+  @include main-padding;
+  padding-top: 45px;
+  width: $main-width;
+  text-align: $center;
+}
+
+.popup-intro {
+  @include zero-indent;
+  @include main-padding;
+  margin-bottom: 33px;
+  width: $main-width;
+  font-weight: $bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.popup-content {
+  @include zero-indent;
+  @include main-padding;
+  @include paragraph-font;
+  margin-bottom: 24px;
+  width: $main-width;
+}

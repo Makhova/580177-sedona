@@ -1,0 +1,26 @@
+.details-list {
+  @include list;
+  padding-top: 38px;
+  background-color: $white;
+}
+
+.details-list__item {
+  @include zero-indent;
+  margin-bottom: 30px;
+  padding-left: 70px;
+  color: #000000;
+  text-align: left;
+}
+
+.details-list__heading {
+  @include zero-indent;
+  @include heading-font;
+  margin-bottom: 18px;
+  width: 230px;
+}
+
+.details-list__description {
+  @include zero-indent;
+  @include paragraph-font;
+  width: 210px;
+}

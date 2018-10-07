@@ -1,0 +1,29 @@
+.video {
+  @include zero-indent;
+  padding-top: 37px;
+}
+
+.video-teaser {
+  @include zero-indent;
+  @include main-padding;
+  @include heading-font;
+  margin-bottom: 30px;
+  width: $main-width;
+  text-align: $center;
+}
+
+.video-intro {
+  @include zero-indent;
+  @include main-padding;
+  @include paragraph-font;
+  margin-bottom: 35px;
+  width: $main-width;
+  text-align: $center;
+}
+
+.video-clip {
+  @include zero-indent;
+  margin-bottom: 76px;
+  width: 320px;
+  height: 200px;
+}
