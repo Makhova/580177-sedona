@@ -24,3 +24,44 @@
   @include paragraph-font;
   width: 210px;
 }
+
+@media (min-width: 768px) {
+  .details-list {
+    display: flex;
+    flex-direction: row;
+    width: $tablet-width;
+  }
+
+  .details-list__item {
+    padding: 0 40px;
+    width: 176px;
+    text-align: $center;
+  }
+
+  .details-list__heading {
+    width: 176px;
+  }
+
+  .details-list__description {
+    width: 176px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .details-list {
+    width: 1200px;
+  }
+
+  .details-list__item {
+    padding: 0 55px;
+    width: 290px;
+  }
+
+  .details-list__heading {
+    width: 310px;
+  }
+
+  .details-list__description {
+    width: 310px;
+  }
+}

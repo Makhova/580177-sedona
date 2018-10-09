@@ -1,28 +1,38 @@
 .socials-list {
   @include list;
+  @include main-padding;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: $main-width;
 }
 
 .socials-list__item {
   margin: 0;
+  margin-right: 7px;
   padding: 10px;
   width: 26px;
   text-align: $center;
   background: $blue;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .socials-list__link {
   @include icon-link;
   background: no-repeat 50% 50%;
+}
 
-  &--twitter {
-    background: url("../img/icon-twitter.svg");
-  }
+.socials-list__link--twitter {
+  background: url("../img/icon-twitter.svg");
+}
 
-  &--facebook {
-    background: url("../img/icon-facebook.svg");
-  }
+.socials-list__link--facebook {
+  background: url("../img/icon-facebook.svg");
+}
 
-  &--youtube {
-    background: url("../img/icon-youtube.svg");
-  }
+.socials-list__link--youtube {
+  background: url("../img/icon-youtube.svg");
 }

@@ -27,3 +27,38 @@
   width: 320px;
   height: 200px;
 }
+
+@media (min-width: 768px) {
+  .video-teaser {
+    padding: 0 60px;
+    width: 648px;
+  }
+
+  .video-intro {
+    padding: 0 60px;
+    width: 648px;
+  }
+
+  .video-clip {
+    margin: 0 60px;
+    width: 648px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .video-teaser {
+    padding: 0 60px;
+    width: 648px;
+  }
+
+  .video-intro {
+    padding: 0 60px;
+    width: 648px;
+  }
+
+  .video-clip {
+    margin: 0 240px;
+    width: 800px;
+  }
+}

@@ -6,4 +6,55 @@
 .main-header__logo {
   margin-left: 110px;
   margin-right: 65px;
+
+  &--mobile {
+    display: block;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    position: relative;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 0 60px;
+  }
+
+  .main-header__logo {
+    position: absolute;
+    left: 333px;
+    margin: 0;
+
+    &--tablet {
+      display: block;
+    }
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-header {
+    position: relative;
+    margin: 0 40px;
+    width: 1200px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 0 60px;
+  }
+
+  .main-header__logo {
+    left: 505px;
+
+    &--desktop {
+      display: block;
+    }
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
+  }
 }

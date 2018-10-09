@@ -2,7 +2,23 @@
   @include zero-indent;
   @include main-padding;
   @include paragraph-font;
-  margin-bottom: 18px;
+  margin-bottom: 40px;
   width: $main-width;
   text-align: $center;
+}
+
+@media (min-width: 768px) {
+  .reviews-intro {
+    padding: 0 40px;
+    margin-bottom: 70px;
+    width: 648px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviews-intro {
+    padding: 0 120px;
+    margin-bottom: 70px;
+    width: 500px;
+  }
 }

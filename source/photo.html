@@ -2,14 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body class="page-body">
 
-    <header class="page-body__header main-header main-header--inner">
-      <img class="main-header__logo" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
+    <header class="page-body__header main-header">
+      <img class="main-header__logo main-header__logo--mobile" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
+      <img class="main-header__logo main-header__logo--tablet" src="img/logo-sedona-tablet.svg" width="103" height="83" alt="Логотип города Седона">
+      <img class="main-header__logo main-header__logo--desktop" src="img/logo-sedona-desktop.svg" width="188" height="96" alt="Логотип города Седона">
       <nav class="main-header__nav main-nav">
         <button class="main-nav__button main-nav__button--open" type="button">Открыть меню</button>
         <ul class="main-nav__menu menu-list">
@@ -17,10 +20,10 @@
             <a class="menu-list__link" href="#">Главная</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Фото и видео</a>
+            <a class="menu-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Форма отзыва</a>
+            <a class="menu-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="menu-list__item">
             <a class="menu-list__link" href="#">HTMLAcademy</a>
@@ -40,10 +43,14 @@
             <figure class="photo-list__photo">
               <img class="photo-list__picture" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Вид Аризоны">
               <figcaption class="photo-list__description">
+                <div>
                 <p class="photo-list__heading">Неродные просторы</p>
                 <p class="photo-list__author">Автор фото: Борис</p>
+              </div>
+              <div>
                 <span class="photo-list__like"></span>
                 <span class="photo-list__like-number">1350</span>
+              </div>
               </figcaption>
             </figure>
           </li>
@@ -51,10 +58,14 @@
             <figure class="photo-list__photo">
               <img class="photo-list__picture" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Цветущий кактус">
               <figcaption class="photo-list__description">
+                <div>
                 <p class="photo-list__heading">Местная растительность</p>
                 <p class="photo-list__author">Автор фото: Сергей</p>
+              </div>
+              <div>
                 <span class="photo-list__like"></span>
                 <span class="photo-list__like-number">143</span>
+              </div>
               </figcaption>
             </figure>
           </li>
@@ -62,10 +73,14 @@
             <figure class="photo-list__photo">
               <img class="photo-list__picture" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Горная дорога">
               <figcaption class="photo-list__description">
+                <div>
                 <p class="photo-list__heading">Дорога на север</p>
                 <p class="photo-list__author">Автор фото: Пётр</p>
+              </div>
+              <div>
                 <span class="photo-list__like"></span>
                 <span class="photo-list__like-number">96</span>
+              </div>
               </figcaption>
             </figure>
           </li>
@@ -73,10 +88,14 @@
             <figure class="photo-list__photo">
               <img class="photo-list__picture" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дъявола">
               <figcaption class="photo-list__description">
+                <div>
                 <p class="photo-list__heading">Мост Дъявола</p>
                 <p class="photo-list__author">Автор фото: Антон</p>
+              </div>
+              <div>
                 <span class="photo-list__like"></span>
                 <span class="photo-list__like-number">254</span>
+              </div>
               </figcaption>
             </figure>
           </li>
@@ -103,10 +122,12 @@
           <a class="socials-list__link socials-list__link--youtube" href="#">Ютьюб</a>
         </li>
       </ul>
-      <p class="main-footer__copyright">Разработано</p>
-      <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Сайт HTML Академии
-        <img class="main-footer_copyright-logo" src="#" width="" height="" alt="Логотип HTML Академии">
-      </a>
+      <div class="main-footer__copyright-wrapper">
+        <p class="main-footer__copyright">Разработано</p>
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Сайт HTML Академии
+          <img class="main-footer_copyright-logo" src="img/logo-htmlacademy.svg" width="28" height="33" alt="Логотип HTML Академии">
+        </a>
+      </div>
     </footer>
   </body>
 </html>

@@ -49,12 +49,19 @@
   background-color: #81b3d2;
 }
 
+@mixin tablet-padding {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
 $bold: bold;
 $center: center;
 $white: #ffffff;
 $blue: #81b3d2;
 $grey: #eeeeee;
 $main-width: 280px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
 
 .page-body {
   @include zero-indent;
@@ -68,4 +75,16 @@ $main-width: 280px;
 .page-body__main,
 .paga-body__footer {
   @include zero-indent;
+}
+
+@media (min-width: 768px) {
+  .page-body {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-body {
+    width: 1280px;
+  }
 }

@@ -14,3 +14,10 @@
 .photos__all-photo {
   @include zero-indent;
 }
+
+@media (min-width: 768px) {
+  .photos__intro {
+    padding: 0 60px;
+    width: 648px;
+  }
+}

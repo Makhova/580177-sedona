@@ -3,6 +3,8 @@
 }
 
 .main-footer__hashtag {
+  @include main-padding;
+  margin-bottom: 40px;
   width: $main-width;
   font-weight: $bold;
   font-size: 20px;
@@ -15,6 +17,14 @@
   margin-bottom: 40px;
 }
 
+.main-footer__copyright-wrapper {
+  @include main-padding;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: $main-width;
+}
+
 .main-footer__copyright {
   @include zero-indent;
   @include paragraph-font;
@@ -24,4 +34,22 @@
 
 .main-footer__copyright-link {
   @include icon-link;
+  width: 27px;
+  height: 34px;
+}
+
+@media (min-width: 768px) {
+  .main-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-footer {
+    justify-content: space-between;
+    padding: 0 40px;
+    width: 1200px;
+  }
 }

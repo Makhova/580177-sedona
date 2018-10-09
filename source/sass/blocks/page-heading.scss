@@ -7,3 +7,11 @@
   width: $main-width;
   text-align: $center;
 }
+
+
+@media (min-width: 768px) {
+  .page-heading {
+    padding: 0 40px;
+    width: 648px;
+  }
+}

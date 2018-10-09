@@ -2,14 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body class="page-body">
 
-    <header class="page-body__header main-header main-header--inner">
-      <img class="main-header__logo" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
+    <header class="page-body__header main-header">
+      <img class="main-header__logo main-header__logo--mobile" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
+      <img class="main-header__logo main-header__logo--tablet" src="img/logo-sedona-tablet.svg" width="103" height="83" alt="Логотип города Седона">
+      <img class="main-header__logo main-header__logo--desktop" src="img/logo-sedona-desktop.svg" width="188" height="96" alt="Логотип города Седона">
       <nav class="main-header__nav main-nav">
         <button class="main-nav__button main-nav__button--open" type="button">Открыть меню</button>
         <ul class="main-nav__menu menu-list">
@@ -17,10 +20,10 @@
             <a class="menu-list__link" href="#">Главная</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Фото и видео</a>
+            <a class="menu-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Форма отзыва</a>
+            <a class="menu-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="menu-list__item">
             <a class="menu-list__link" href="#">HTMLAcademy</a>
@@ -34,7 +37,7 @@
       <h1 class="page-heading page-heading--reviews-heading">Оставьте свой отзыв</h1>
       <p class="reviews-intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
       <form class="user-review" action="echo.htmlacademy.ru" method="post">
-        <fieldset class="user-review__fieldset">
+        <fieldset class="user-review__fieldset user-review__fieldset--user-info">
           <legend class="user-review__heading">Представьтесь:</legend>
           <p class="user-review__item user-review__item--user-info">
             <label class="user-review__description user-review__description--name" for="name">Имя<sup>*</sup>:</label>
@@ -49,8 +52,9 @@
             <input class="user-review__field user-review__field--patronymic-field" id="patronymic" name="patronymic" type="text" value="Александрович">
           </p>
         </fieldset>
-        <fieldset class="user-review__fieldset">
+        <fieldset class="user-review__fieldset user-review__fieldset--user-contacts">
           <legend class="user-review__heading">Контактная информация:</legend>
+          <div class="user-review__wrapper user-review__wrapper--user-contacts">
           <p class="user-review__item user-review__item--user-contacts">
             <label class="user-review__description user-review__description--phone" for="phone">Контактный телефон<sup>*</sup>:</label>
             <input class="user-review__field user-review__field--phone-field" id="phone" type="tel" value="Введите телефон">
@@ -59,8 +63,9 @@
             <label class="user-review__description user-review__description--email" for="email">Электронная почта<sup>*</sup>:</label>
             <input class="user-review__field user-review__field--email-field" id="email" type="email" value="Введите e-mail">
           </p>
+        </div>
         </fieldset>
-        <fieldset class="user-review__fieldset">
+        <fieldset class="user-review__fieldset user-review__fieldset--user-impression">
           <legend class="user-review__heading">Ваше общее впечатление:</legend>
           <p class="user-review__item user-review__item--user-impression">
             <input class="user-review__radio user-review__radio--positive" id="positive" name="impression" type="radio" value="positive" checked>
@@ -75,24 +80,26 @@
             <label class="user-review__radio-description user-review__radio-description--unknown">Затрудняюсь ответить</label>
           </p>
         </fieldset>
-        <fieldset class="user-review__fieldset">
+        <fieldset class="user-review__fieldset user-review__fieldset--user-sights">
           <legend class="user-review__heading">Посещённые достопримечательности:</legend>
-          <p class="user-review__item user-review__item--user-sights">
-            <input class="user-review__checkbox user-review__checkbox--devbridge" id="devbridge" name="devbridge" type="checkbox" value="devbridge" checked>
-            <label class="user-review__checkbox-description user-review__checkbox-description--devbridge">Мост Дьявола</label>
-          </p>
-          <p class="user-review__item user-review__item--user-sights">
-            <input class="user-review__checkbox user-review__checkbox--bellmountain" id="bellmountain" name="bellmountain" type="checkbox" value="bellmountain" checked>
-            <label class="user-review__checkbox-description user-review__checkbox-description--bellmountain">Гора-Колокол</label>
-          </p>
-          <p class="user-review__item user-review__item--user-sights">
-            <input class="user-review__checkbox user-review__checkbox--slidepark" id="slidepark" name="slidepark" type="checkbox" value="slidepark" checked>
-            <label class="user-review__checkbox-description user-review__checkbox-description--slidepark">Слайд-парк</label>
-          </p>
-          <p class="user-review__item user-review__item--user-sights">
-            <input class="user-review__checkbox user-review__checkbox--redrocks" id="redrocks" name="redrocks" type="checkbox" value="redrocks">
-            <label class="user-review__checkbox-description user-review__checkbox-description--redrocks">Красные скалы</label>
-          </p>
+          <div class="user-review__wrapper">
+            <p class="user-review__item user-review__item--user-sights">
+              <input class="user-review__checkbox user-review__checkbox--devbridge" id="devbridge" name="devbridge" type="checkbox" value="devbridge" checked>
+              <label class="user-review__checkbox-description user-review__checkbox-description--devbridge">Мост Дьявола</label>
+            </p>
+            <p class="user-review__item user-review__item--user-sights">
+              <input class="user-review__checkbox user-review__checkbox--bellmountain" id="bellmountain" name="bellmountain" type="checkbox" value="bellmountain" checked>
+              <label class="user-review__checkbox-description user-review__checkbox-description--bellmountain">Гора-Колокол</label>
+            </p>
+            <p class="user-review__item user-review__item--user-sights">
+              <input class="user-review__checkbox user-review__checkbox--slidepark" id="slidepark" name="slidepark" type="checkbox" value="slidepark" checked>
+             <label class="user-review__checkbox-description user-review__checkbox-description--slidepark">Слайд-парк</label>
+            </p>
+            <p class="user-review__item user-review__item--user-sights">
+              <input class="user-review__checkbox user-review__checkbox--redrocks" id="redrocks" name="redrocks" type="checkbox" value="redrocks">
+              <label class="user-review__checkbox-description user-review__checkbox-description--redrocks">Красные скалы</label>
+            </p>
+          </div>
         </fieldset>
         <fieldset class="user-review__fieldset">
           <legend class="user-review__heading">Опишите свои эмоции:</legend>
@@ -115,10 +122,12 @@
           <a class="socials-list__link socials-list__link--youtube" href="#">Ютьюб</a>
         </li>
       </ul>
-      <p class="main-footer__copyright">Разработано</p>
-      <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Сайт HTML Академии
-        <img class="main-footer_copyright-logo" src="#" width="" height="" alt="Логотип HTML Академии">
-      </a>
+      <div class="main-footer__copyright-wrapper">
+        <p class="main-footer__copyright">Разработано</p>
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Сайт HTML Академии
+          <img class="main-footer_copyright-logo" src="img/logo-htmlacademy.svg" width="28" height="33" alt="Логотип HTML Академии">
+        </a>
+      </div>
     </footer>
 
     <section class="popup popup--failure">
