@@ -59,7 +59,7 @@
   }
 
   .photo-list__item,
-  .photo-list__photo  {
+  .photo-list__photo {
     padding: 0;
     width: 324px;
 
@@ -88,7 +88,7 @@
     width: 400px;
 
     &:first-child {
-    width: 1200px;
+      width: 1200px;
     }
   }
 

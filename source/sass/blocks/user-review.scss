@@ -108,7 +108,6 @@
   }
 
   .user-review__fieldset {
-
     &--user-info {
       width: 324px;
     }
@@ -130,14 +129,12 @@
   }
 
   .user-review__item {
-
     &--user-contacts {
       width: 648px;
     }
   }
 
   .user-review__field {
-
     &--phone-field,
     &--email-field {
       width: 608px;
@@ -171,14 +168,13 @@
 
     &--user-contacts,
     &--user-sights {
-    display: flex;
-    flex-wrap: wrap;
-    width: 960px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 960px;
+    }
   }
-}
 
   .user-review__item {
-
     &--user-info {
       width: 480px;
     }
@@ -201,7 +197,6 @@
   }
 
   .user-review__description {
-
     &--phone {
       margin-right: 10px;
       padding: 0;
@@ -222,7 +217,6 @@
   }
 
   .user-review__field {
-
     &--name-field {
       width: 310px;
     }
