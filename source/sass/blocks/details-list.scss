@@ -1,11 +1,12 @@
 .details-list {
-  @include list;
   padding-top: 38px;
+  width: $mobile-width;
+  list-style: none;
   background-color: $white;
 }
 
 .details-list__item {
-  @include zero-indent;
+  width: 230px;
   margin-bottom: 30px;
   padding-left: 70px;
   color: #000000;
@@ -13,41 +14,32 @@
 }
 
 .details-list__heading {
-  @include zero-indent;
   @include heading-font;
   margin-bottom: 18px;
-  width: 230px;
 }
 
 .details-list__description {
-  @include zero-indent;
   @include paragraph-font;
-  width: 210px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .details-list {
     display: flex;
-    flex-direction: row;
     width: $tablet-width;
   }
 
   .details-list__item {
-    padding: 0 40px;
-    width: 176px;
-    text-align: $center;
-  }
+    padding: 0 35px;
+    width: 186px;
+    text-align: center;
 
-  .details-list__heading {
-    width: 176px;
-  }
-
-  .details-list__description {
-    width: 176px;
+    &:nth-child(2) {
+      order: 2;
+    }
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: $desktop-width) {
   .details-list {
     width: 1200px;
   }

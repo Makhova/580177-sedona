@@ -1,7 +1,17 @@
 .button {
-  @include button;
-  margin-right: 20px;
-  margin-left: 20px;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  padding: 17px 20px;
+  border: none;
+  width: 280px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #81b3d2;
 
   &--user-review {
     text-transform: uppercase;
@@ -14,5 +24,33 @@
 
   &--popup-failure {
     width: 180px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 458px;
+
+    &--user-review {
+      margin: 0;
+    }
+
+    &--popup-failure {
+      width: 272px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 480px;
+
+    &--popup-failure {
+      width: 272px;
+    }
+
+    &--popup-success {
+      width: 458px;
+    }
   }
 }

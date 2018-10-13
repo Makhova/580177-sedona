@@ -1,17 +1,20 @@
 .page-heading {
-  @include zero-indent;
-  @include main-padding;
   @include heading-font;
-  margin-top: 40px;
+  margin: 0 auto;
   margin-bottom: 30px;
-  width: $main-width;
-  text-align: $center;
+  padding-top: 40px;
+  width: 280px;
+  text-align: center;
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-heading {
-    padding: 0 40px;
     width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-heading {
+    width: 960px;
   }
 }

@@ -3,45 +3,47 @@
 }
 
 .main-footer__hashtag {
-  @include main-padding;
+  margin: 0 auto;
   margin-bottom: 40px;
-  width: $main-width;
-  font-weight: $bold;
+  width: 280px;
+  font-weight: bold;
   font-size: 20px;
   line-height: 26px;
-  text-align: $center;
+  text-align: center;
 }
 
 .main-footer__socials {
-  @include zero-indent;
+  margin: 0 auto;
   margin-bottom: 40px;
+  padding: 0;
 }
 
 .main-footer__copyright-wrapper {
-  @include main-padding;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  width: $main-width;
+  align-items: center;
+  margin: 0 auto;
+  width: 280px;
 }
 
 .main-footer__copyright {
-  @include zero-indent;
   @include paragraph-font;
   margin-right: 10px;
   width: 95px;
 }
 
 .main-footer__copyright-link {
-  @include icon-link;
-  width: 27px;
-  height: 34px;
+  font-size: 0;
+}
+
+.main-footer__copyright-logo {
+  width: 28px;
+  height: 33px;
 }
 
 @media (min-width: 768px) {
   .main-footer {
     display: flex;
-    flex-direction: row;
     align-items: baseline;
   }
 }

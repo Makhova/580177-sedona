@@ -1,111 +1,101 @@
 .photo-list {
-  @include list;
+  width: 280px;
+  list-style: none;
 }
 
 .photo-list__item {
-  @include zero-indent;
+  margin: 0;
+  padding: 0;
   padding-top: 23px;
   padding-bottom: 23px;
+  width: 280px;
 }
 
 .photo-list__photo {
-  @include zero-indent;
-  @include main-padding;
-  width: $main-width;
+  padding: 0;
+  margin: 0;
+  width: 280px;
 }
 
 .photo-list__picture {
   margin-bottom: 18px;
-  width: $main-width;
+  width: 280px;
   height: 280px;
 }
 
 .photo-list__description {
-  @include zero-indent;
+  margin: 0;
+  width: 280px;
   font-size: 14px;
   line-height: 24px;
 }
 
 .photo-list__heading {
-  @include zero-indent;
-  font-weight: $bold;
+  margin: 0;
+  font-weight: bold;
   color: #333333;
 }
 
 .photo-list__author {
-  @include zero-indent;
+  margin: 0;
   text-transform: none;
 }
 
 .photo-list__like {
-  @include zero-indent;
   display: block;
   margin-right: 15px;
 }
 
 .photo-list__like-number {
-  @include zero-indent;
   display: block;
-  font-weight: $bold;
+  font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .photo-list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 60px;
     width: 648px;
   }
 
-  .photo-list__item {
+  .photo-list__item,
+  .photo-list__photo  {
+    padding: 0;
     width: 324px;
 
-  &:first-child {
-    width: 648px;
+    &:first-child {
+      width: 648px;
     }
   }
 
   .photo-list__description {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    width: 324px;
-  }
-
-  .photo-list__description div:first-child {
-    margin-right: 35px;
-    margin-left: 20px;
-  }
-
-  .photo-list__description div:last-child {
-    margin-right: 25px;
+    padding-right: 24px;
+    padding-left: 20px;
+    width: 280px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: $desktop-width) {
   .photo-list {
     padding: 0 40px;
     width: 1200px;
   }
 
-  .photo-list__item {
+  .photo-list__item,
+  .photo-list__photo {
     width: 400px;
 
-  &:first-child {
+    &:first-child {
     width: 1200px;
     }
   }
 
   .photo-list__description {
-    width: 400px;
-  }
-
-  .photo-list__description div:first-child {
-    margin-right: 110px;
-  }
-
-  .photo-list__description div:last-child {
-    margin-right: 30px;
+    margin-top: -70px;
+    width: 356px;
+    color: $white;
+    background-color: #000000;
   }
 }

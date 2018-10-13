@@ -1,4 +1,6 @@
 .main-header {
+  margin: 0 auto;
+  width: $mobile-width;
   min-height: 440px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 0 60px;
 }
@@ -17,9 +19,10 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-header {
     position: relative;
+    width: $tablet-width;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat 0 60px;
   }
 
@@ -38,10 +41,9 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: $desktop-width) {
   .main-header {
     position: relative;
-    margin: 0 40px;
     width: 1200px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat 0 60px;
   }

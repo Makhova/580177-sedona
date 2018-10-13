@@ -17,13 +17,13 @@
         <button class="main-nav__button main-nav__button--open" type="button">Открыть меню</button>
         <ul class="main-nav__menu menu-list">
           <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Главная</a>
+            <a class="menu-list__link" href="index.html">Главная</a>
           </li>
           <li class="menu-list__item">
             <a class="menu-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="form.html">Форма отзыва</a>
+            <a class="menu-list__link" href="#">Форма отзыва</a>
           </li>
           <li class="menu-list__item">
             <a class="menu-list__link" href="#">HTMLAcademy</a>
@@ -55,11 +55,11 @@
         <fieldset class="user-review__fieldset user-review__fieldset--user-contacts">
           <legend class="user-review__heading">Контактная информация:</legend>
           <div class="user-review__wrapper user-review__wrapper--user-contacts">
-          <p class="user-review__item user-review__item--user-contacts">
-            <label class="user-review__description user-review__description--phone" for="phone">Контактный телефон<sup>*</sup>:</label>
+          <p class="user-review__item user-review__item--user-contacts user-review__item--phone">
+            <label class="user-review__description user-review__description--phone" for="phone"><span>Контактный </span>телефон<sup>*</sup>:</label>
             <input class="user-review__field user-review__field--phone-field" id="phone" type="tel" value="Введите телефон">
           </p>
-          <p class="user-review__item user-review__item--user-contacts">
+          <p class="user-review__item user-review__item--user-contacts user-review__item--email">
             <label class="user-review__description user-review__description--email" for="email">Электронная почта<sup>*</sup>:</label>
             <input class="user-review__field user-review__field--email-field" id="email" type="email" value="Введите e-mail">
           </p>
@@ -82,7 +82,7 @@
         </fieldset>
         <fieldset class="user-review__fieldset user-review__fieldset--user-sights">
           <legend class="user-review__heading">Посещённые достопримечательности:</legend>
-          <div class="user-review__wrapper">
+          <div class="user-review__wrapper user-review__wrapper--user-sights">
             <p class="user-review__item user-review__item--user-sights">
               <input class="user-review__checkbox user-review__checkbox--devbridge" id="devbridge" name="devbridge" type="checkbox" value="devbridge" checked>
               <label class="user-review__checkbox-description user-review__checkbox-description--devbridge">Мост Дьявола</label>
@@ -125,7 +125,7 @@
       <div class="main-footer__copyright-wrapper">
         <p class="main-footer__copyright">Разработано</p>
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Сайт HTML Академии
-          <img class="main-footer_copyright-logo" src="img/logo-htmlacademy.svg" width="28" height="33" alt="Логотип HTML Академии">
+          <img class="main-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="28" height="33" alt="Логотип HTML Академии">
         </a>
       </div>
     </footer>

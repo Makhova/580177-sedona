@@ -1,6 +1,5 @@
 .main-nav {
-  @include zero-indent;
-  width: 320px;
+  width: $mobile-width;
 }
 
 .main-nav__button {
@@ -11,12 +10,13 @@
 }
 
 .main-nav__menu {
-  @include zero-indent;
+  margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-nav {
-    width: 768px;
+    width: $tablet-width;
   }
 
   .main-nav__button {
@@ -24,8 +24,8 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: $desktop-width) {
   .main-nav {
-    width: 1200px;
+    width: $desktop-width;
   }
 }
