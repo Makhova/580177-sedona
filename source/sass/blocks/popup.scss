@@ -1,25 +1,30 @@
 .popup {
-  @include zero-indent;
-  @include main-padding;
+  padding: 20px;
   padding-top: 45px;
-  width: $main-width;
-  text-align: $center;
+  width: 280px;
+  text-align: center;
 }
 
 .popup-intro {
-  @include zero-indent;
-  @include main-padding;
+  margin: 0 auto;
   margin-bottom: 33px;
-  width: $main-width;
-  font-weight: $bold;
+  width: 280px;
+  font-weight: bold;
   font-size: 20px;
   line-height: 26px;
 }
 
 .popup-content {
-  @include zero-indent;
-  @include main-padding;
   @include paragraph-font;
+  margin: 0 auto;
   margin-bottom: 24px;
-  width: $main-width;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .popup {
+    padding-right: 91px;
+    padding-left: 91px;
+    width: 458px;
+  }
 }

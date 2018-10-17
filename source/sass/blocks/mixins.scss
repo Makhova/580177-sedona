@@ -1,0 +1,10 @@
+@mixin heading-font {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin paragraph-font {
+  font-size: 14px;
+  line-height: 26px;
+}

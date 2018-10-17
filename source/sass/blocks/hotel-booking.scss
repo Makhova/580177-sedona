@@ -1,30 +1,69 @@
 .hotel-booking {
-  @include zero-indent;
   padding-top: 32px;
-  padding-bottom: 50px;
-  text-align: $center;
+  width: $mobile-width;
 }
 
 .hotel-booking__teaser {
-  @include zero-indent;
-  @include main-padding;
+  margin: 0 auto;
   margin-bottom: 25px;
-  width: $main-width;
-  font-weight: $bold;
+  width: 280px;
+  font-weight: bold;
   font-size: 20px;
   line-height: 26px;
+  text-align: center;
 }
 
 .hotel-booking__intro {
-  @include zero-indent;
-  @include main-padding;
   @include paragraph-font;
+  margin: 0 auto;
   margin-bottom: 35px;
-  width: $main-width;
+  width: 280px;
+  text-align: center;
 }
 
 .hotel-booking__map {
+  margin-top: 50px;
   margin-bottom: 40px;
   width: 320px;
   height: 350px;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel-booking {
+    width: $tablet-width;
+  }
+
+  .hotel-booking__teaser {
+    width: 648px;
+  }
+
+  .hotel-booking__intro {
+    width: 648px;
+  }
+
+  .hotel-booking__map {
+    margin-bottom: 40px;
+    width: 768px;
+    height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel-booking {
+    width: 1200px;
+  }
+
+  .hotel-booking__teaser {
+    width: 960px;
+  }
+
+  .hotel-booking__intro {
+    width: 960px;
+  }
+
+  .hotel-booking__map {
+    margin-bottom: 40px;
+    width: 1200px;
+    height: 350px;
+  }
 }

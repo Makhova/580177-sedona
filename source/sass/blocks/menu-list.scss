@@ -1,20 +1,68 @@
 .menu-list {
-  @include list;
+  list-style: none;
 }
 
 .menu-list__item {
-  @include zero-indent;
-  width: 320px;
+  width: $mobile-width;
+  padding: 0;
   padding-top: 8px;
   padding-bottom: 8px;
-  text-align: $center;
+  text-align: center;
   background: $blue;
 }
 
 .menu-list__link {
-  @include links;
-  font-weight: $bold;
+  font-weight: bold;
   font-size: 18px;
   line-height: 40px;
   color: $white;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .menu-list {
+    display: flex;
+    padding-top: 16px;
+  }
+
+  .menu-list__item {
+    margin-right: 40px;
+    padding: 0;
+    width: 120px;
+    background: $white;
+
+    &:nth-child(3) {
+      margin-left: 140px;
+    }
+
+    &:last-child {
+      margin-right: 25px;
+    }
+  }
+
+  .menu-list__link {
+    @include paragraph-font;
+    color: #000000;
+  }
+}
+
+@media (min-width: 1280px) {
+  .menu-list__item {
+    margin-right: 150px;
+    width: 150px;
+
+    &:nth-child(3) {
+      margin-left: 90px;
+    }
+
+    &:last-child {
+      margin-right: 60px;
+    }
+  }
+
+  .menu-list__link {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+  }
 }

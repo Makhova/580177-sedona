@@ -1,33 +1,33 @@
 .features {
-  @include zero-indent;
+  padding-top: 40px;
+  width: $mobile-width;
 }
 
 .features__slogan {
-  @include zero-indent;
   @include heading-font;
-  margin-top: 43px;
+  margin: 0 auto;
   margin-bottom: 30px;
-  width: $main-width;
-  color: #000000;
-  text-align: $center;
+  width: 280px;
+  text-align: center;
 }
 
 .features__intro {
-  @include zero-indent;
   @include paragraph-font;
+  margin: 0 auto;
   margin-bottom: 43px;
-  width: $main-width;
-  text-align: $center;
+  width: 280px;
+  text-align: center;
 }
 
 .features__list {
-  @include zero-indent;
-  @include list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .features__item {
-  @include zero-indent;
-  text-align: $center;
+  margin: 0 auto;
+  width: 320px;
 
   &--blueback {
     padding-top: 43px;
@@ -41,40 +41,130 @@
   }
 }
 
+.features__content-wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.features__item--blueback .features__content-wrapper {
+  padding-bottom: 30px;
+}
+
+.features__item--greyback .features__content-wrapper {
+  padding-bottom: 40px;
+}
+
 .features__heading {
-  @include zero-indent;
-  @include main-padding;
   @include heading-font;
+  margin: 0;
   margin-bottom: 14px;
-  width: $main-width;
+  width: 280px;
+  text-align: center;
 }
 
 .features__number {
-  @include zero-indent;
   @include paragraph-font;
+  margin: 0;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .features__description {
-  @include zero-indent;
-  @include main-padding;
   @include paragraph-font;
-  width: $main-width;
-
-  &--white {
-    padding-bottom: 40px;
-  }
-
-  &--black {
-    padding-bottom: 28px;
-  }
+  margin: 0;
+  width: 280px;
+  text-align: center;
 }
 
 .features__details {
-  @include zero-indent;
+  margin: 0;
+  padding: 0;
+}
+
+.features__picture-block {
+  margin: 0;
 }
 
 .features__picture {
   width: 320px;
   height: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    padding-top: 50px;
+    width: $tablet-width;
+  }
+
+  .features__slogan {
+    width: 648px;
+  }
+
+  .features__intro {
+    width: 648px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: $tablet-width;
+  }
+
+  .features__item {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .features__content-wrapper {
+    padding-top: 40px;
+    padding-right: 45px;
+    padding-bottom: 40px;
+    padding-left: 45px;
+    width: 166px;
+  }
+
+  .features__heading {
+    width: 166px;
+  }
+
+  .features__description {
+    width: 166px;
+  }
+
+  .features__picture-block {
+    width: 512px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .features__slogan {
+    width: 1200px;
+  }
+
+  .features__intro {
+    width: 1200px;
+  }
+
+  .features__list {
+    padding: 0 40px;
+    width: 1200px;
+  }
+
+  .features__content-wrapper {
+    padding: 50px 80px;
+    width: 240px;
+  }
+
+  .features__heading {
+    width: 240px;
+  }
+
+  .features__description {
+    width: 240px;
+  }
+
+  .features__picture-block {
+    width: 800px;
+  }
 }

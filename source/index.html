@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -9,7 +10,9 @@
   <body class="page-body">
 
     <header class="page-body__header main-header">
-      <img class="main-header__logo" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
+      <img class="main-header__logo main-header__logo--mobile" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
+      <img class="main-header__logo main-header__logo--tablet" src="img/logo-sedona-tablet.svg" width="103" height="83" alt="Логотип города Седона">
+      <img class="main-header__logo main-header__logo--desktop" src="img/logo-sedona-desktop.svg" width="188" height="96" alt="Логотип города Седона">
       <nav class="main-header__nav main-nav">
         <button class="main-nav__button main-nav__button--open" type="button">Открыть меню</button>
         <ul class="main-nav__menu menu-list">
@@ -17,10 +20,10 @@
             <a class="menu-list__link" href="#">Главная</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Фото и видео</a>
+            <a class="menu-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="#">Форма отзыва</a>
+            <a class="menu-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="menu-list__item">
             <a class="menu-list__link" href="#">HTMLAcademy</a>
@@ -34,49 +37,62 @@
       <h1 class="visually-hidden">О Седоне</h1>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <p class="features__slogan">Седона - небольшой<br>городок в Аризоне,<br>заслуживающий большего!</p>
+        <p class="features__slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="features__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="features__list">
           <li class="features__item features__item--blueback">
-            <h3 class="features__heading features__heading--white">Настоящий городок</h3>
-            <p class="features__number features__number--white">- №1 -</p>
-            <p class="features__description features__description--white">Седона не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="features__picture" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Вид Седоны">
-              <ul class="features__details details-list">
-                <li class="details-list__item">
-                  <h4 class="details-list__heading">Жильё</h4>
-                  <p class="details-list__description">Рекомендуем пожить в настоящем мотеле, всё, как в кино!</p>
-                </li>
-                <li class="details-list__item">
-                  <h4 class="details-list__heading">Сувениры</h4>
-                  <p class="details-list__description">Не только китайского, но и местного производства!</p>
-                </li>
-                <li class="details-list__item">
-                  <h4 class="details-list__heading">Еда</h4>
-                  <p class="details-list__description features__description--white">Всегда заказывайте фирменый бургер, вы не разочаруетесь!</p>
-                </li>
-              </ul>
+            <div class="features__content-wrapper">
+              <h3 class="features__heading features__heading--white">Настоящий городок</h3>
+              <p class="features__number features__number--white">- №1 -</p>
+              <p class="features__description features__description--white">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <p class="features__picture-block">
+              <img class="features__picture" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Вид Седоны">
+            </p>
+            <ul class="features__details details-list">
+              <li class="details-list__item">
+                <h4 class="details-list__heading">Жильё</h4>
+                <p class="details-list__description">Рекомендуем пожить в настоящем мотеле, всё, как в кино!</p>
+              </li>
+              <li class="details-list__item">
+                <h4 class="details-list__heading">Сувениры</h4>
+                <p class="details-list__description">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="details-list__item">
+                <h4 class="details-list__heading">Еда</h4>
+                <p class="details-list__description features__description--white">Всегда заказывайте фирменый бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
           </li>
           <li class="features__item features__item--blueback">
-            <h3 class="features__heading features__heading--white">Там есть мост дьявола</h3>
-            <p class="features__number features__number--white">- №2 -</p>
-            <p class="features__description features__description--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="features__picture" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дъявола">
+            <div class="features__content-wrapper">
+              <h3 class="features__heading features__heading--white">Там есть мост дьявола</h3>
+              <p class="features__number features__number--white">- №2 -</p>
+              <p class="features__description features__description--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <p class="features__picture-block">
+              <img class="features__picture" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Вид Седоны">
+            </p>
+          <li class="features__item features__item--greyback">
+            <div class="features__content-wrapper">
+              <h3 class="features__heading features__heading--black">Небольшая площадь</h3>
+              <p class="features__number features__number--black">- №3 -</p>
+              <p class="features__description features__description--black">Все интересные места находятся очень близко</p>
+            </div>
           </li>
           <li class="features__item features__item--greyback">
-            <h3 class="features__heading features__heading--black">Небольшая площадь</h3>
-            <p class="features__number features__number--black">- №3 -</p>
-            <p class="features__description features__description--black">Все интересные места находятся очень близко</p>
+            <div class="features__content-wrapper">
+              <h3 class="features__heading features__heading--black">Красивая дорога</h3>
+              <p class="features__number features__number--black">- №4 -</p>
+              <p class="features__description features__description--black">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+            </div>
           </li>
           <li class="features__item features__item--greyback">
-            <h3 class="features__heading features__heading--black">Красивая дорога</h3>
-            <p class="features__number features__number--black">- №4 -</p>
-            <p class="features__description features__description--black">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-          </li>
-          <li class="features__item features__item--greyback">
-            <h3 class="features__heading features__heading--black">Мало туристов</h3>
-            <p class="features__number features__number--black">- №5 -</p>
-            <p class="features__description features__description--black">Большинство едет в Гранд Каньон и толпится там</p>
+            <div class="features__content-wrapper">
+              <h3 class="features__heading features__heading--black">Мало туристов</h3>
+              <p class="features__number features__number--black">- №5 -</p>
+              <p class="features__description features__description--black">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -85,7 +101,7 @@
         <p class="hotel-booking__teaser">Заинтересовались?</p>
         <p class="hotel-booking__intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button button--hotel-booking" href="#">Найти гостиницу</a>
-        <iframe class="hotel-booking__map" src="#"></iframe>
+        <iframe class="hotel-booking__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352372.0694689!2d-114.03724976390784!3d34.8612310561644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1538841704278" width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
     </main>
 
@@ -102,10 +118,12 @@
           <a class="socials-list__link socials-list__link--youtube" href="#">Ютьюб</a>
         </li>
       </ul>
-      <p class="main-footer__copyright">Разработано</p>
-      <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Сайт HTML Академии
-        <img class="main-footer_copyright-logo" src="img/logo-htmlacademy.svg" width="28" height="33" alt="Логотип HTML Академии">
-      </a>
+      <div class="main-footer__copyright-wrapper">
+        <p class="main-footer__copyright">Разработано</p>
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Сайт HTML Академии
+          <img class="main-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="28" height="33" alt="Логотип HTML Академии">
+        </a>
+      </div>
     </footer>
   </body>
 </html>

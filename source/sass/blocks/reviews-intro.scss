@@ -1,8 +1,21 @@
 .reviews-intro {
-  @include zero-indent;
-  @include main-padding;
   @include paragraph-font;
-  margin-bottom: 18px;
-  width: $main-width;
-  text-align: $center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 280px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-intro {
+    margin-bottom: 70px;
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-intro {
+    margin-bottom: 70px;
+    width: 960px;
+  }
 }

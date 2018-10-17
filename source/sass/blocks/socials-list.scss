@@ -1,28 +1,23 @@
 .socials-list {
-  @include list;
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  list-style: none;
 }
 
 .socials-list__item {
   margin: 0;
+  margin-right: 7px;
   padding: 10px;
   width: 26px;
-  text-align: $center;
+  text-align: center;
   background: $blue;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .socials-list__link {
-  @include icon-link;
-  background: no-repeat 50% 50%;
-
-  &--twitter {
-    background: url("../img/icon-twitter.svg");
-  }
-
-  &--facebook {
-    background: url("../img/icon-facebook.svg");
-  }
-
-  &--youtube {
-    background: url("../img/icon-youtube.svg");
-  }
+  font-size: 0;
 }
