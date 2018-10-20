@@ -1,21 +1,15 @@
-.features {
-  padding-top: 40px;
-  width: $mobile-width;
-}
-
 .features__slogan {
   @include heading-font;
-  margin: 0 auto;
+  margin: 0;
+  margin-top: 40px;
   margin-bottom: 30px;
-  width: 280px;
   text-align: center;
 }
 
 .features__intro {
   @include paragraph-font;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 43px;
-  width: 280px;
   text-align: center;
 }
 
@@ -26,39 +20,42 @@
 }
 
 .features__item {
-  margin: 0 auto;
-  width: 320px;
+  margin: 0;
+  padding-top: 40px;
 
-  &--blueback {
-    padding-top: 43px;
+  &:first-child {
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -16px;
+  }
+
+  &--blue {
     color: $white;
     background-color: $blue;
   }
 
-  &--greyback {
-    padding-top: 30px;
+  &--grey {
     background-color: $grey;
   }
-}
 
-.features__content-wrapper {
-  margin: 0 auto;
-  width: 280px;
-}
+  &--grey::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 1px;
+    background-color: #d6d6d6;
+  }
 
-.features__item--blueback .features__content-wrapper {
-  padding-bottom: 30px;
-}
-
-.features__item--greyback .features__content-wrapper {
-  padding-bottom: 40px;
+  &:last-child::after {
+    display: none;
+  }
 }
 
 .features__heading {
   @include heading-font;
   margin: 0;
   margin-bottom: 14px;
-  width: 280px;
   text-align: center;
 }
 
@@ -72,13 +69,11 @@
 .features__description {
   @include paragraph-font;
   margin: 0;
-  width: 280px;
   text-align: center;
 }
 
 .features__details {
   margin: 0;
-  padding: 0;
 }
 
 .features__picture-block {
@@ -86,50 +81,32 @@
 }
 
 .features__picture {
+  display: block;
   width: 320px;
   height: 260px;
 }
 
 @media (min-width: $tablet-width) {
-  .features {
-    padding-top: 50px;
-    width: $tablet-width;
-  }
-
-  .features__slogan {
-    width: 648px;
-  }
-
   .features__intro {
-    width: 648px;
+    margin-top: 50px;
   }
 
   .features__list {
     display: flex;
     flex-wrap: wrap;
-    width: $tablet-width;
   }
 
   .features__item {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-  }
 
-  .features__content-wrapper {
-    padding-top: 40px;
-    padding-right: 45px;
-    padding-bottom: 40px;
-    padding-left: 45px;
-    width: 166px;
-  }
+    &:first-child {
+      background-image: none;
+    }
 
-  .features__heading {
-    width: 166px;
-  }
-
-  .features__description {
-    width: 166px;
+    &::after {
+      display: none;
+    }
   }
 
   .features__picture-block {
@@ -137,33 +114,7 @@
   }
 }
 
-@media (min-width: 1280px) {
-  .features__slogan {
-    width: 1200px;
-  }
-
-  .features__intro {
-    width: 1200px;
-  }
-
-  .features__list {
-    padding: 0 40px;
-    width: 1200px;
-  }
-
-  .features__content-wrapper {
-    padding: 50px 80px;
-    width: 240px;
-  }
-
-  .features__heading {
-    width: 240px;
-  }
-
-  .features__description {
-    width: 240px;
-  }
-
+@media (min-width: $desktop-width) {
   .features__picture-block {
     width: 800px;
   }

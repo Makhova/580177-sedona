@@ -1,0 +1,86 @@
+.container {
+  margin: 0 auto;
+  width: 280px;
+
+  &--page-body {
+    margin: 0;
+    width: 100%;
+  }
+
+  &--features {
+    padding-bottom: 35px;
+  }
+
+  &--hotel-booking {
+    padding-top: 32px;
+  }
+
+  &--footer {
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 648px;
+
+    &--page-body {
+      width: 100%;
+    }
+
+    &--features {
+      padding: 0;
+      padding-right: 45px;
+      padding-bottom: 40px;
+      padding-left: 45px;
+      width: 166px;
+    }
+
+    &--footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--user-review {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &--user-sights {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1200px;
+
+    &--page-body {
+      margin: 0 auto;
+    }
+
+    &--features {
+      padding: 50px 80px;
+      width: 240px;
+      }
+
+    &--user-review {
+      margin: 0 auto;
+      width: 960px;
+    }
+
+    &--user-contacts {
+      display: flex;
+      flex-wrap: wrap;
+      width: 960px;
+    }
+
+    &--user-sights {
+      width: 960px;
+    }
+  }
+}

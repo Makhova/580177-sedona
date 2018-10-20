@@ -1,11 +1,6 @@
-.main-footer {
-  padding-bottom: 25px;
-}
-
 .main-footer__hashtag {
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 40px;
-  width: 280px;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
@@ -15,15 +10,13 @@
 .main-footer__socials {
   margin: 0 auto;
   margin-bottom: 40px;
-  padding: 0;
 }
 
 .main-footer__copyright-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  width: 280px;
+  margin: 0;
 }
 
 .main-footer__copyright {
@@ -32,26 +25,30 @@
   width: 95px;
 }
 
-.main-footer__copyright-link {
-  font-size: 0;
-}
-
 .main-footer__copyright-logo {
   width: 28px;
   height: 33px;
 }
 
-@media (min-width: 768px) {
-  .main-footer {
-    display: flex;
-    align-items: baseline;
+@media (min-width: $tablet-width) {
+  .main-footer__hashtag {
+    margin: 0;
+    width: 33%;
+  }
+
+  .main-footer__socials {
+    margin: 0;
+    width: 33%;
+  }
+
+  .main-footer__copyright-wrapper {
+    margin: 0;
+    width: 33%;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .main-footer {
     justify-content: space-between;
-    padding: 0 40px;
-    width: 1200px;
   }
 }

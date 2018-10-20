@@ -1,21 +1,12 @@
 .reviews-intro {
   @include paragraph-font;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 40px;
-  width: 280px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .reviews-intro {
     margin-bottom: 70px;
-    width: 648px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .reviews-intro {
-    margin-bottom: 70px;
-    width: 960px;
   }
 }

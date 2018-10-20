@@ -1,6 +1,6 @@
 .details-list {
+  padding: 0;
   padding-top: 38px;
-  width: $mobile-width;
   list-style: none;
   background-color: $white;
 }
@@ -25,7 +25,6 @@
 @media (min-width: $tablet-width) {
   .details-list {
     display: flex;
-    width: $tablet-width;
   }
 
   .details-list__item {
