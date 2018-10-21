@@ -6,11 +6,21 @@
 }
 
 .details-list__item {
+  position: relative;
   width: 230px;
   margin-bottom: 30px;
   padding-left: 70px;
   color: #000000;
   text-align: left;
+}
+
+.details-list__icon {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  width: 39px;
+  height: 37px;
+  fill: $blue;
 }
 
 .details-list__heading {
@@ -25,16 +35,26 @@
 @media (min-width: $tablet-width) {
   .details-list {
     display: flex;
+    padding: 0;
   }
 
   .details-list__item {
-    padding: 0 35px;
+    padding: 160px 35px 0;
     width: 186px;
     text-align: center;
 
     &:nth-child(2) {
       order: 2;
     }
+  }
+
+  .details-list__icon {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 75px;
   }
 }
 
@@ -44,7 +64,8 @@
   }
 
   .details-list__item {
-    padding: 0 55px;
+    padding-right: 55px;
+    padding-left: 55px;
     width: 290px;
   }
 

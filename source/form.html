@@ -8,32 +8,61 @@
   </head>
 
   <body class="page-body">
+    <svg class="page-body__sprite">
+      <symbol id="icon-menu" viewbox="0 0 23 22">
+        <path d="M0 0h22.928v3.964H0zM0 9.009h22.928v3.964H0zM0 18.018h22.928v3.964H0z"/>
+      </symbol>
+
+      <symbol id="icon-cross" viewbox="0 0 23 22">
+        <path d="M22.199 2.804L19.396 0 11.1 8.297 2.804 0 0 2.803 8.297 11.1 0 19.396l2.803 2.803 8.297-8.297 8.296 8.297 2.803-2.803-8.296-8.296z"/>
+      </symbol>
+
+      <symbol id="htmlacademy" viewbox="0 0 27 34">
+        <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+      </symbol>
+
+      <symbol id="header-text-inner" viewbox="0 0 460 80">
+        <g fill="#FFF"><path d="M44.466 21.738c-3.572-2.979-8.139-4.963-12.902-4.963-3.572 0-8.338 2.084-8.338 6.253 0 4.368 5.261 6.055 8.636 7.146l4.964 1.489C47.248 34.74 55.287 40 55.287 52.11c0 7.445-1.787 15.088-7.742 20.149-5.855 4.964-13.697 7.048-21.24 7.048-9.43 0-18.661-3.177-26.305-8.537l8.338-15.683c4.865 4.269 10.621 7.742 17.271 7.742 4.566 0 9.43-2.283 9.43-7.545 0-5.459-7.643-7.345-11.812-8.535-12.208-3.475-20.249-6.648-20.249-21.142C2.978 10.419 13.796.495 28.785.495c7.543 0 16.775 2.382 23.426 6.154l-7.745 15.089zM91.831 18.959v12.506h21.937v16.479H91.831v12.899h23.127v16.479H72.376V2.483h42.582V18.96l-23.127-.001zM129.417 2.482h27.594c20.844 0 38.016 16.377 38.016 37.419 0 21.041-17.271 37.42-38.016 37.42h-27.594V2.482zm19.455 58.364h4.367c11.612 0 21.539-6.352 21.539-20.942 0-13.4-8.834-20.943-21.341-20.943h-4.565v41.885zM286.873 38.513c0 24.219-17.371 41.292-41.394 41.292-24.02 0-41.391-17.071-41.391-41.292C204.089 15.881 223.941 0 245.479 0c21.54 0 41.394 15.881 41.394 38.513zm-62.534.099c0 12.905 9.529 22.333 21.141 22.333 11.613 0 21.144-9.43 21.144-22.333 0-10.323-9.526-19.752-21.144-19.752-11.613 0-21.141 9.43-21.141 19.752zM297.238 2.482h19.454l35.636 45.757h.196V2.482h19.453v74.839h-19.453L316.89 31.465h-.197v45.856h-19.454V2.482zM407.345 64.319l-5.16 13.002h-20.646l28.785-74.839h21.242l28.188 74.839h-20.745l-4.862-13.002h-26.802zm13.6-38.71h-.199l-8.039 23.824h16.178l-7.94-23.824z"/></g>
+      </symbol>
+    </svg>
+
     <div class="container container--page-body">
-      <header class="page-body__header main-header main-header--inner">
+    <header class="page-body__header main-header main-header--inner">
         <a href="index.html">
           <img class="main-header__logo main-header__logo--mobile" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
           <img class="main-header__logo main-header__logo--tablet" src="img/logo-sedona-tablet.svg" width="103" height="83" alt="Логотип города Седона">
           <img class="main-header__logo main-header__logo--desktop" src="img/logo-sedona-desktop.svg" width="188" height="96" alt="Логотип города Седона">
         </a>
         <nav class="main-header__nav main-nav">
-          <button class="main-nav__button main-nav__button--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__menu menu-list">
+          <button class="main-nav__button main-nav__button--open" type="button"><span class="visually-hidden">Открыть меню</span>
+            <svg class="menu-icon" width="23" height="22">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </button>
+            <ul class="main-nav__menu menu-list">
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Главная</a>
+              <a class="menu-list__link" href="index.html">Главная</a>
             </li>
             <li class="menu-list__item">
               <a class="menu-list__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="form.html">Форма отзыва</a>
+              <a class="menu-list__link menu-list__link--active-link" href="#">Форма отзыва</a>
             </li>
             <li class="menu-list__item">
               <a class="menu-list__link" href="#">HTMLAcademy</a>
             </li>
           </ul>
-          <button class="main-nav__button main-nav__button--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+          <button class="main-nav__button main-nav__button--close" type="button"><span class="visually-hidden">Закрыть меню</span>
+            <svg width="23" height="22">
+              <use class="icon-cross" xlink:href="#icon-cross"></use>
+            </svg>
+          </button>
         </nav>
-      </header>
+        <svg class="main-header__inner-text" width="229" height="39">
+          <use xlink:href="#header-text-inner"></use>
+        </svg>
+    </header>
 
       <main class="page-body__main">
         <div class="container container--user-review">
@@ -132,7 +161,9 @@
         <div class="main-footer__copyright-wrapper">
           <p class="main-footer__copyright">Разработано</p>
           <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Сайт HTML Академии</span>
-            <img class="main-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="28" height="33" alt="Логотип HTML Академии">
+            <svg class="main-footer__copyright-logo" width="27" height="34">
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>

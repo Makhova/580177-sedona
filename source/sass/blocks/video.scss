@@ -19,12 +19,44 @@
 
 .video__video-block {
   margin: 0;
-  margin-bottom: 76px;
 }
 
 .video-clip {
+  display: block;
   width: 320px;
   height: 200px;
+}
+
+.video-controls {
+  margin: 0 auto;
+  padding: 23px 25px;
+  width: 230px;
+  height: 26px;
+  background-color: $grey;
+}
+
+.video-buttons {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: $grey;
+
+  &--subtitles {
+    width: 32px;
+  }
+}
+
+.video-buttons svg {
+  fill: #5c6870;
+}
+
+.video-buttons:hover svg,
+.video-buttons:focus svg {
+  fill: #333333;
+}
+
+.video-buttons:active svg {
+  fill: #b8b8b8;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,6 +73,24 @@
   .video-clip {
     width: 648px;
     height: 500px;
+  }
+
+  .video-controls,
+  .video-buttons {
+    background-color: rgba(102, 102, 102, 0.6);
+  }
+
+  .video-buttons svg {
+    fill: #ffffff;
+  }
+
+  .video-buttons:hover svg,
+  .video-buttons:focus svg {
+    fill: #c2c2c2;
+  }
+
+  .video-buttons:active svg {
+    fill: #949494;
   }
 }
 

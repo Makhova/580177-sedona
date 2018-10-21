@@ -26,8 +26,17 @@
 }
 
 .main-footer__copyright-logo {
-  width: 28px;
-  height: 33px;
+  width: 27px;
+  height: 34px;
+
+  &:hover,
+  &:focus {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: rgba(1, 1, 1, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

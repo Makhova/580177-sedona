@@ -1,14 +1,11 @@
 .main-nav__button {
   position: absolute;
-  width: 23px;
-  height: 22px;
   border: none;
-  background-repeat: no-repeat;
+  background-color: $white;
 
   &--open {
     top: 20px;
     right: 20px;
-    background-image: url("../img/icon-menu.svg");
   }
 
   &--close {
@@ -20,13 +17,28 @@
   }
 }
 
+.main-nav__button .menu-icon {
+  fill: $blue;
+}
+
+.main-nav__button .icon-cross {
+  fill: #ffffff;
+}
+
 .main-nav__menu {
+  position: relative;
+  z-index: 5;
   margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     background-color: $white;
+  }
+
+  .main-nav__menu {
+    position: static;
+    z-index: 0;
   }
 
   .main-nav__button {
