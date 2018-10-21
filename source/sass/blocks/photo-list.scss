@@ -1,5 +1,5 @@
 .photo-list {
-  width: 280px;
+  padding: 0;
   list-style: none;
 }
 
@@ -8,13 +8,11 @@
   padding: 0;
   padding-top: 23px;
   padding-bottom: 23px;
-  width: 280px;
 }
 
 .photo-list__photo {
   padding: 0;
   margin: 0;
-  width: 280px;
 }
 
 .photo-list__picture {
@@ -55,16 +53,13 @@
   .photo-list {
     display: flex;
     flex-wrap: wrap;
-    width: 648px;
   }
 
-  .photo-list__item,
-  .photo-list__photo {
-    padding: 0;
-    width: 324px;
+  .photo-list__item {
+    width: 50%;
 
-    &:first-child {
-      width: 648px;
+    &--full-length {
+      width: 100%;
     }
   }
 
@@ -73,22 +68,20 @@
     justify-content: space-between;
     padding-right: 24px;
     padding-left: 20px;
-    width: 280px;
+
+    &--full-length {
+      box-sizing: border-box;
+      width: 100%;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .photo-list {
-    padding: 0 40px;
-    width: 1200px;
-  }
+  .photo-list__item {
+    width: 33%;
 
-  .photo-list__item,
-  .photo-list__photo {
-    width: 400px;
-
-    &:first-child {
-      width: 1200px;
+    &--full-length {
+      width: 100%;
     }
   }
 
@@ -97,5 +90,10 @@
     width: 356px;
     color: $white;
     background-color: #000000;
+    opacity: 0.3;
+
+    &--full-length {
+      width: 100%;
+    }
   }
 }
