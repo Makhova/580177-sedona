@@ -1,31 +1,35 @@
-.main-nav {
-  width: $mobile-width;
-}
-
 .main-nav__button {
+  position: absolute;
   width: 23px;
-  height: 21px;
-  font-size: 0;
-  background: no-repeat;
+  height: 22px;
+  border: none;
+  background-repeat: no-repeat;
+
+  &--open {
+    top: 20px;
+    right: 20px;
+    background-image: url("../img/icon-menu.svg");
+  }
+
+  &--close {
+    position: absolute;
+    display: none;
+    right: 20px;
+    top: 17px;
+    background-image:  url("../img/icon-cross.svg");
+  }
 }
 
 .main-nav__menu {
   margin: 0;
-  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: $tablet-width;
+    background-color: $white;
   }
 
   .main-nav__button {
     display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav {
-    width: $desktop-width;
   }
 }

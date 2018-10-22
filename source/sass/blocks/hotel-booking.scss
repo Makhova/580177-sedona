@@ -1,12 +1,6 @@
-.hotel-booking {
-  padding-top: 32px;
-  width: $mobile-width;
-}
-
 .hotel-booking__teaser {
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 25px;
-  width: 280px;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
@@ -15,9 +9,8 @@
 
 .hotel-booking__intro {
   @include paragraph-font;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 35px;
-  width: 280px;
   text-align: center;
 }
 
@@ -29,18 +22,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .hotel-booking {
-    width: $tablet-width;
-  }
-
-  .hotel-booking__teaser {
-    width: 648px;
-  }
-
-  .hotel-booking__intro {
-    width: 648px;
-  }
-
   .hotel-booking__map {
     margin-bottom: 40px;
     width: 768px;
@@ -49,18 +30,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .hotel-booking {
-    width: 1200px;
-  }
-
-  .hotel-booking__teaser {
-    width: 960px;
-  }
-
-  .hotel-booking__intro {
-    width: 960px;
-  }
-
   .hotel-booking__map {
     margin-bottom: 40px;
     width: 1200px;

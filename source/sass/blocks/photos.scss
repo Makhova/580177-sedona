@@ -1,40 +1,9 @@
-.photos {
-  padding: 0 20px;
-  width: 280px;
-}
-
 .photos__intro {
   @include paragraph-font;
   margin-bottom: 18px;
-  width: 280px;
   text-align: center;
 }
 
 .photos__all-photo {
   margin: 0;
-  padding: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .photos {
-    padding: 0 60px;
-    width: 648px;
-  }
-
-  .photos__intro {
-    width: 648px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .photos {
-    padding: 0 40px;
-    width: 1200px;
-  }
-
-  .photos__intro {
-    margin: 0 auto;
-    margin-bottom: 70px;
-    width: 960px;
-  }
 }

@@ -1,20 +1,8 @@
 .page-body {
   margin: 0;
   padding: 0;
-  width: $mobile-width;
+  width: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
-  .page-body {
-    width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-body {
-    width: $desktop-width;
-  }
 }
