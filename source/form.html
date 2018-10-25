@@ -29,9 +29,11 @@
     <div class="container container--page-body">
     <header class="page-body__header main-header main-header--inner">
         <a href="index.html">
-          <img class="main-header__logo main-header__logo--mobile" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
-          <img class="main-header__logo main-header__logo--tablet" src="img/logo-sedona-tablet.svg" width="103" height="83" alt="Логотип города Седона">
-          <img class="main-header__logo main-header__logo--desktop" src="img/logo-sedona-desktop.svg" width="188" height="96" alt="Логотип города Седона">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+            <img class="main-header__logo" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
+          </picture>
         </a>
         <nav class="main-header__nav main-nav">
           <button class="main-nav__button main-nav__button--open" type="button"><span class="visually-hidden">Открыть меню</span>
@@ -65,12 +67,15 @@
     </header>
 
       <main class="page-body__main">
-        <div class="container container--user-review">
-        <h1 class="page-heading">Оставьте свой отзыв</h1>
-        <p class="reviews-intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+          <div class="container">
+            <h1 class="page-heading">Оставьте свой отзыв</h1>
+              <p class="reviews-intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+            </div>
 
+        <div class="container container--user-review">
         <form class="user-review" action="echo.htmlacademy.ru" method="post">
           <fieldset class="user-review__fieldset user-review__fieldset--user-info">
+            <div class="container container--fieldset">
             <legend class="user-review__heading">Представьтесь:</legend>
             <p class="user-review__item user-review__item--user-info">
               <label class="user-review__description user-review__description--name" for="name">Имя<sup>*</sup>:</label>
@@ -84,8 +89,10 @@
               <label class="user-review__description user-review__description--patronymic" for="patronymic">Отчество<sup>*</sup>:</label>
               <input class="user-review__field user-review__field--patronymic" id="patronymic" name="patronymic" type="text" value="Александрович">
             </p>
+          </div>
           </fieldset>
-          <fieldset class="user-review__fieldset user-review__fieldset--user-contacts">
+          <fieldset class="user-review__fieldset user-review__fieldset--user-contacts user-review__fieldset--full-screen">
+            <div class="container container--form">
             <legend class="user-review__heading">Контактная информация:</legend>
             <div class="container container--user-contacts">
               <p class="user-review__item user-review__item--user-contacts user-review__item--phone">
@@ -97,9 +104,11 @@
                 <input class="user-review__field user-review__field--email" id="email" type="email" value="Введите e-mail">
               </p>
             </div>
+          </div>
           </fieldset>
           <p class="user-review__reminder"><sup>*</sup> - обязательные поля</p>
           <fieldset class="user-review__fieldset user-review__fieldset--user-impression">
+            <div class="container container--fieldset">
             <legend class="user-review__heading">Ваше общее впечатление:</legend>
             <p class="user-review__item user-review__item--user-impression">
               <input class="user-review__radio user-review__radio--positive" id="positive" name="impression" type="radio" value="positive" checked>
@@ -113,8 +122,10 @@
               <input class="user-review__radio user-review__radio--unknown" id="unknown" name="impression" type="radio" value="unknown">
               <label class="user-review__radio-description user-review__radio-description--unknown">Затрудняюсь ответить</label>
             </p>
+          </div>
           </fieldset>
-          <fieldset class="user-review__fieldset user-review__fieldset--user-sights">
+          <fieldset class="user-review__fieldset user-review__fieldset--user-sights user-review__fieldset--full-screen">
+            <div class="container container--form">
             <legend class="user-review__heading">Посещённые достопримечательности:</legend>
             <div class="container container--user-sights">
               <p class="user-review__item user-review__item--user-sights">
@@ -134,12 +145,15 @@
                 <label class="user-review__checkbox-description user-review__checkbox-description--redrocks">Красные скалы</label>
               </p>
             </div>
+          </div>
           </fieldset>
-          <fieldset class="user-review__fieldset">
+          <fieldset class="user-review__fieldset user-review__fieldset--full-screen">
+            <div class="container container--form">
             <legend class="user-review__heading">Опишите свои эмоции:</legend>
             <textarea class="user-review__emotions" id="emotions" name="emotions">Опишите подробно все свои восторги</textarea>
           </fieldset>
           <button class="button button--user-review" type="submit">Отправить отзыв</button>
+        </div>
         </form>
       </div>
     </main>
