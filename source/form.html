@@ -33,7 +33,7 @@
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
             <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
-            <img class="main-header__logo" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
+            <img class="main-header__logo main-header__logo--inner" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Логотип города Седона">
           </picture>
         </a>
         <nav class="main-header__nav main-nav">
@@ -77,7 +77,7 @@
         <div class="container container--user-review">
         <form class="user-review" action="echo.htmlacademy.ru" method="post">
           <fieldset class="user-review__fieldset user-review__fieldset--user-info">
-            <legend class="user-review__heading">Представьтесь:</legend>
+            <legend class="user-review__heading"><h3>Представьтесь:</h3></legend>
               <div class="container container--fieldset">
             <p class="user-review__item user-review__item--user-info">
               <label class="user-review__description user-review__description--name" for="name">Имя<sup>*</sup>:</label>
@@ -94,7 +94,7 @@
           </div>
           </fieldset>
           <fieldset class="user-review__fieldset user-review__fieldset--user-contacts user-review__fieldset--full-length">
-            <legend class="user-review__heading user-review__heading--decorated"><h3>Контактная информация:</h3></legend>
+            <legend class="user-review__heading user-review__heading user-review__heading--user-contacts user-review__heading--decorated"><h3>Контактная информация:</h3></legend>
             <div class="container container--user-contacts">
               <p class="user-review__item user-review__item--user-contacts user-review__item--phone">
                 <label class="user-review__description user-review__description--phone" for="phone"><span>Контактный </span>телефон<sup>*</sup>:</label>
@@ -108,7 +108,7 @@
           </fieldset>
           <p class="user-review__reminder"><sup>*</sup> - обязательные поля</p>
           <fieldset class="user-review__fieldset user-review__fieldset--user-impression">
-            <legend class="user-review__heading">Ваше общее впечатление:</legend>
+            <legend class="user-review__heading"><h3>Ваше общее впечатление:</h3></legend>
             <div class="container container--fieldset">
             <p class="user-review__item user-review__item--user-impression">
               <label>
@@ -121,20 +121,20 @@
               <label>
               <input class="user-review__radio user-review__radio--negative visually-hidden" id="negative" name="impression" type="radio" value="negative">
               <span class="user-review__radio-indicator"></span>
-              <span class="user-review__radio-description user-review__radio-description--negative">Скорее положительное</span>
+              <span class="user-review__radio-description user-review__radio-description--negative">Скорее отрицательное</span>
             </label>
             </p>
             <p class="user-review__item user-review__item--user-impression">
               <label>
               <input class="user-review__radio user-review__radio--unknown visually-hidden" id="unknown" name="impression" type="radio" value="unknown">
               <span class="user-review__radio-indicator"></span>
-              <span class="user-review__radio-description user-review__radio-description--unknown">Скорее положительное</span>
+              <span class="user-review__radio-description user-review__radio-description--unknown">Затрудняюсь ответить</span>
             </label>
             </p>
           </div>
           </fieldset>
           <fieldset class="user-review__fieldset user-review__fieldset--user-sights user-review__fieldset--full-length">
-            <legend class="user-review__heading user-review__heading--decorated"><h3>Посещённые достопримечательности:</h3></legend>
+            <legend class="user-review__heading user-review__heading--user-sights user-review__heading--decorated"><h3>Посещённые достопримечательности:</h3></legend>
             <div class="container container--user-sights">
               <p class="user-review__item user-review__item--user-sights">
                 <label>
@@ -166,7 +166,7 @@
               </p>
             </div>
           </fieldset>
-          <fieldset class="user-review__fieldset user-review__fieldset--full-length">
+          <fieldset class="user-review__fieldset user-review__fieldset--user-emotions user-review__fieldset--full-length">
             <legend class="user-review__heading user-review__heading--decorated"><h3>Опишите свои эмоции:</h3></legend>
                         <div class="container container--form">
             <textarea class="user-review__emotions" id="emotions" name="emotions" placeholder="Опишите все свои восторги"></textarea>

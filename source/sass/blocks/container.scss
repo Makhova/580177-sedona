@@ -8,6 +8,8 @@
   }
 
   &--header {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 
@@ -76,7 +78,8 @@
     &--user-sights {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      padding: 0 90px;
+      width: 468px;
     }
 
     &--photos {
@@ -128,6 +131,7 @@
     }
 
     &--user-sights {
+      padding: 0;
       width: 960px;
     }
 

@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: $white;
+  order: -1;
 }
 
 .main-nav__button {
@@ -9,7 +9,7 @@
   background-color: $white;
 
   &--open {
-    top: -38px;
+    top: 240px;
     right: 20px;
   }
 
@@ -19,6 +19,13 @@
     right: 20px;
     top: 17px;
     background-image:  url("../img/icon-cross.svg");
+  }
+}
+
+.main-header {
+
+  &--inner .main-nav__button {
+    top: -38px;
   }
 }
 

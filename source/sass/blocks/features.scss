@@ -1,7 +1,7 @@
 .features__slogan {
   @include heading-font;
   margin-top: 37px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -77,7 +77,7 @@
   }
 
   &--grey {
-    padding-bottom: 30px;
+    padding-bottom: 28px;
   }
 }
 
@@ -102,6 +102,10 @@
     margin-bottom: 33px;
   }
 
+  .features__intro {
+    margin-bottom: 52px;
+  }
+
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +118,7 @@
 
     &--grey {
       padding-bottom: 43px;
+      width: 33.3%;
     }
 
     &:first-child {
@@ -149,6 +154,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features__slogan {
+    margin-bottom: 58px;
+  }
+
+  .features__item {
+
+    &--grey {
+      padding-bottom: 15px;
+    }
+  }
+
+  .features__heading {
+    margin-bottom: 14px;
+  }
+
   .features__picture-block {
     width: 800px;
   }

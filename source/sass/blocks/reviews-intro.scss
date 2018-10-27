@@ -1,12 +1,20 @@
 .reviews-intro {
-  @include paragraph-font;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 17px;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .reviews-intro {
-    margin-bottom: 70px;
+    margin-bottom: 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-intro {
+    margin-bottom: 39px;
   }
 }
