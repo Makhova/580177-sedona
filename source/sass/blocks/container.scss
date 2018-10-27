@@ -7,13 +7,20 @@
     width: 100%;
   }
 
-  &--features {
-    padding-top: 40px;
-    padding-bottom: 35px;
+  &--header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
-  &--hotel-booking {
-    padding-top: 32px;
+  &--header-inner {
+    position: relative;
+    min-height: 160px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"),
+                      url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 100%, -225px 100%;
+    background-size: 100%, auto;
   }
 
   &--footer {
@@ -37,8 +44,17 @@
       width: 100%;
     }
 
+    &--header {
+      width: 100%;
+    }
+
+    &--header-inner {
+      background: none;
+    }
+
     &--features {
       margin: 0 auto;
+      padding-top: 47px;
       padding-right: 35px;
       padding-left: 35px;
       width: 186px;
@@ -62,7 +78,8 @@
     &--user-sights {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      padding: 0 90px;
+      width: 468px;
     }
 
     &--photos {
@@ -83,6 +100,10 @@
       margin: 0 auto;
       background-color: $white;
       box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+    }
+
+    &--header {
+      width: 100%;
     }
 
     &--features {
@@ -110,6 +131,7 @@
     }
 
     &--user-sights {
+      padding: 0;
       width: 960px;
     }
 

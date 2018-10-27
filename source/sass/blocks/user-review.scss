@@ -9,6 +9,34 @@
   padding: 0;
   border: none;
 
+  &--user-info {
+    padding-bottom: 25px;
+  }
+
+  &--user-contacts {
+    padding-bottom: 32px;
+  }
+
+  &--user-impression {
+    padding-bottom: 30px;
+  }
+
+  &--user-sights {
+    padding-bottom: 28px;
+  }
+
+  &--user-emotions {
+    padding-bottom: 42px;
+  }
+}
+
+.user-review__heading {
+  @include heading-font;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  width: 100%;
+  text-align: center;
+
   &::before {
     content: "";
     display: block;
@@ -17,12 +45,9 @@
   }
 }
 
-.user-review__heading {
-  @include heading-font;
+.user-review__heading h3 {
   margin: 0;
-  margin-top: 20px;
-  margin-bottom: 21px;
-  text-align: center;
+  padding-top: 20px;
 }
 
 .user-review__item {
@@ -30,26 +55,36 @@
   margin-bottom: 20px;
 
   &:last-child {
-    margin-bottom: 28px;
+    margin-bottom: 0;
   }
 
-  &--user-info,
-  &--user-impression,
+  &--user-contacts {
+    margin-bottom: 11px;
+  }
+  &--user-impression {
+    margin-bottom: 14px;
+  }
+
   &--user-sights {
+    margin-bottom: 23px;
+    }
+
+  &--user-info {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
   }
 
-  &--user-sights,
-  &--user-impression {
-    margin-bottom: 50px;
+  &--user-impression label,
+  &--user-sights label {
+    display: flex;
+    align-items: center;
   }
 }
 
 .user-review__description {
   @include paragraph-font;
-  display: inline-block;
+  display: block;
+  margin: 0;
   margin-right: 15px;
   width: 75px;
 
@@ -59,7 +94,8 @@
 
   &--phone,
   &--email {
-    padding-left: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
     width: 230px;
   }
 }
@@ -67,7 +103,7 @@
 .user-review__field {
   @include heading-font;
   box-sizing: border-box;
-  display: block;
+  display: inline-block;
   padding: 20px;
   border: none;
   width: 190px;
@@ -83,13 +119,14 @@
     width: 280px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:focus {
+    padding: 16px;
     border: 4px solid #e5e5e5;
+    outline: none;
     background-color: $white;
   }
 }
@@ -98,68 +135,61 @@
   display: none;
 }
 
-.user-review__radio,
-.user-review__checkbox {
+.user-review__radio-indicator,
+.user-review__checkbox-indicator {
   display: block;
-  margin-right: 50px;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 55px;
-    transform: translate(-15%, -50%);
-    vertical-align: center;
-    background-color: #f2f2f2;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    background-color: #e5e5e5;
-  }
-
-  &:active::after {
-    background-color: #d5d5d5;
-  }
+  width: 55px;
+  height: 55px;
+  background-color: #f2f2f2;
 }
 
-.user-review__radio {
+.user-review__radio-indicator {
+  border-radius: 50%;
+}
 
-  &::after {
-    border-radius: 50%;
+.user-review__checkbox-indicator {
+  border-radius: 5px;
+}
+
+.user-review__radio:hover + .user-review__radio-indicator,
+.user-review__radio:focus + .user-review__radio-indicator,
+.user-review__checkbox:hover + .user-review__checkbox-indicator,
+.user-review__checkbox:focus + .user-review__checkbox-indicator {
+  background-color: #e5e5e5;
   }
 
-  &:checked::after {
+.user-review__radio:active + .user-review__radio-indicator,
+.user-review__checkbox:active + .user-review__checkbox-indicator {
+  background-color: #d5d5d5;
+}
+
+.user-review__radio:checked + .user-review__radio-indicator {
     width: 19px;
     height: 19px;
     border: 18px solid #f2f2f2;
     background-color: #000000;
-  }
 }
 
-.user-review__checkbox {
-
-  &:checked::after {
+.user-review__checkbox:checked + .user-review__checkbox-indicator {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-  }
 }
 
 .user-review__radio-description,
 .user-review__checkbox-description {
   @include heading-font;
-  display: block;
+  display: inline-block;
+  margin-left: 10px;
   width: 240px;
   text-transform: none;
 }
 
 .user-review__emotions {
   @include heading-font;
-  margin-bottom: 50px;
   padding: 20px;
   width: 240px;
-  min-height: 160px;
+  min-height: 120px;
   border: none;
   background-color: $grey;
 }
@@ -168,52 +198,102 @@
   .user-review {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 100px;
+    padding-bottom: 94px;
   }
 
   .user-review__fieldset {
     position: relative;
+    padding-bottom: 66px;
 
     &--user-info {
-      width: 324px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 178px;
+        left: -144px;
+        display: block;
+        width: 292px;
+        height: 1px;
+        background-color: $grey;
+        transform: rotate(90deg);
+      }
+    }
+
+    &--user-contacts {
+      padding-bottom: 53px;
     }
 
     &--user-impression {
       order: -1;
-      width: 324px;
     }
+
+    &--user-sights {
+      padding-bottom: 55px;
+    }
+
+    &--user-emotions {
+      padding-bottom: 52px;
+    }
+  }
+
+  .user-review__heading {
+    @include heading-font-tablet;
+    margin-bottom: 60px;
 
     &::before {
       display: none;
     }
 
-    &--full-screen .user-review__heading {
-
-    &::before,
-    &::after {
-      position: absolute;
-      top: 13px;
-      content: "";
-      display: block;
-      width: 123px;
-      height: 1px;
-      background-color: #dbdbdb;
+    &--user-contacts {
+      margin-bottom: 25px;
     }
 
-    &::before {
-      left: 0;
+    &--user-sights {
+      margin-bottom: 44px;
     }
 
-    &::after {
-      right: 0;
+    &--decorated {
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
     }
-  }
+
+    &--decorated h3 {
+      margin: 0 auto;
+      padding: 0 10px;
+      max-width: 380px;
+    }
   }
 
   .user-review__item {
 
+    &--user-impression {
+      margin-bottom: 25px;
+    }
+
     &--user-sights {
-      width: 220px;
+      width: 50%;
+    }
+
+    &--user-contacts {
+      margin-bottom: 21px;
     }
   }
 
@@ -221,12 +301,39 @@
     position: relative;
   }
 
+  .user-review__description {
+
+    &--name,
+    &--surname,
+    &--patronymic {
+      margin-left: 57px;
+    }
+
+    &--phone,
+    &--email {
+      margin-bottom: 7px;
+    }
+  }
+
   .user-review__field {
+
+    &--name {
+      width: 216px;
+    }
+
+    &--surname,
+    &--patronymic {
+      width: 178px;
+    }
 
     &--phone,
     &--email {
       width: 648px;
     }
+  }
+
+  .user-review__checkbox-description {
+    max-width: 160px;
   }
 
   .user-review__reminder {
@@ -244,11 +351,11 @@
 
 @media (min-width: $desktop-width) {
   .user-review {
+    padding-bottom: 98px;
     width: 960px;
   }
 
   .user-review__fieldset {
-    margin-bottom: 75px;
 
     &--user-info {
       width: 480px;
@@ -259,43 +366,82 @@
       width: 480px;
     }
 
-    &--full-screen .user-review__heading {
+    &--user-contacts {
+      padding-bottom: 31px;
+    }
 
-    &::before,
-    &::after {
-      width: 280px;
+    &--user-sights {
+      padding-bottom: 42px;
     }
   }
+
+  .user-review__heading {
+
+    &--user-contacts {
+      margin-bottom: 73px;
+    }
+
+    &--decorated {
+
+      &::before,
+      &::after {
+        width: 280px;
+      }
+    }
+
+    &--decorated h3 {
+      max-width: 380px;
+    }
   }
 
   .user-review__item {
 
-    &--phone {
+    &--user-info {
+      padding-left: 25px;
+    }
+
+    &--phone,
+    &--email {
       display: flex;
+      align-items: baseline;
+    }
+
+    &--phone{
       margin-right: 80px;
       width: 400px;
     }
 
     &--email {
-      display: flex;
       width: 480px;
+    }
+
+    &--user-sights {
+      margin-left: 22px;
+      width: 223px;
+
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 
   .user-review__description {
 
-    &--phone {
-      margin-right: 10px;
+    &--phone,
+    &--email {
+      margin-bottom: 0;
+      margin-left: 0;
       padding: 0;
-      width: 75px;
-      vertical-align: middle;
+    }
+
+    &--phone {
+      margin-right: 20px;
+      width: 65px;
     }
 
     &--email {
       margin-right: 10px;
-      padding: 0;
-      width: 165px;
-      vertical-align: middle;
+      width: 155px;
     }
   }
 
@@ -316,8 +462,17 @@
 
     &--phone,
     &--email {
-      width: 305px;
+      width: 315px;
     }
+  }
+
+  .user-review__radio-description,
+  .user-review__checkbox-description {
+    margin-left: 30px;
+  }
+
+  .user-review__checkbox-description {
+    width: 135px;
   }
 
   .user-review__emotions {

@@ -1,4 +1,6 @@
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+.user-review__radio,
+.user-review__checkbox {
   position: absolute;
   width: 1px;
   height: 1px;

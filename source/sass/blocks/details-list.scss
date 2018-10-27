@@ -1,6 +1,8 @@
 .details-list {
   padding: 0;
-  padding-top: 38px;
+  padding-top: 12px;
+  padding-bottom: 29px;
+  width: 100%;
   list-style: none;
   background-color: $white;
 }
@@ -8,7 +10,6 @@
 .details-list__item {
   position: relative;
   width: 230px;
-  margin-bottom: 30px;
   padding-left: 70px;
   color: #000000;
   text-align: left;
@@ -16,7 +17,7 @@
 
 .details-list__icon {
   position: absolute;
-  top: -15px;
+  top: -11px;
   left: 20px;
   width: 39px;
   height: 37px;
@@ -25,7 +26,7 @@
 
 .details-list__heading {
   @include heading-font;
-  margin-bottom: 18px;
+  margin-bottom: 5px;
 }
 
 .details-list__description {
@@ -35,11 +36,12 @@
 @media (min-width: $tablet-width) {
   .details-list {
     display: flex;
+    justify-content: space-around;
     padding: 0;
   }
 
   .details-list__item {
-    padding: 160px 35px 0;
+    padding: 133px 35px 49px;
     width: 186px;
     text-align: center;
 
@@ -48,8 +50,17 @@
     }
   }
 
+  .details-list__heading {
+    @include heading-font-tablet;
+    margin-bottom: 22px;
+  }
+
+  .details-list__description {
+    margin-bottom: 10px;
+  }
+
   .details-list__icon {
-    top: 65px;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     width: 64px;
@@ -73,6 +84,7 @@
   }
 
   .details-list__description {
+    margin-bottom: 29px;
     width: 310px;
   }
 }
