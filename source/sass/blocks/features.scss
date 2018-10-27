@@ -21,7 +21,6 @@
 
 .features__item {
   margin: 0;
-  padding-top: 40px;
 
   &:first-child {
     background-image: url("../img/bg-triangle.svg");
@@ -111,11 +110,21 @@
 
   .features__picture-block {
     width: 512px;
+    height: 256px;
+  }
+
+  .features__picture {
+    width: 512px;
+    height: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features__picture-block {
+    width: 800px;
+  }
+
+  .features__picture {
     width: 800px;
   }
 }

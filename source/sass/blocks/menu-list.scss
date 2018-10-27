@@ -1,5 +1,5 @@
 .menu-list {
-  display: none;
+  display: block;
   padding: 0;
   list-style: none;
 }
@@ -11,16 +11,29 @@
   padding-bottom: 8px;
   text-align: center;
   background: $blue;
-  box-shadow: 0 1 0 0 rgba(1,1,1, 0.2),
-              0 1 0 0 rgba(255,255,255, 0.2) inset;
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2),
+              inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .menu-list__link {
   font-weight: bold;
   font-size: 18px;
-  line-height: 40px;
   color: $white;
+  line-height: 40px;
   text-decoration: none;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: 768px) {
@@ -33,18 +46,39 @@
     padding: 0;
     width: 25%;
     background-color: $white;
+    box-shadow: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $white;
+    }
   }
 
   .menu-list__link {
     @include paragraph-font;
     color: #000000;
-  }
-}
 
-@media (min-width: 1280px) {
-  .menu-list__link {
-    font-size: 14px;
-    line-height: 26px;
-    color: #000000;
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--active-link {
+      color: #766357;
+    }
+
+    &--active-link:hover,
+    &--active-link:focus {
+      color: #604e43;
+    }
+
+    &--active-link:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
   }
 }

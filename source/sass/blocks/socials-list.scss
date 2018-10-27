@@ -29,6 +29,15 @@
   &--youtube {
     background-image: url("../img/icon-youtube.svg");
   }
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 @media (min-width: 768px) {

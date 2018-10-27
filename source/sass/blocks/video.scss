@@ -19,12 +19,84 @@
 
 .video__video-block {
   margin: 0;
-  margin-bottom: 76px;
 }
 
 .video-clip {
+  display: block;
+  margin: 0;
   width: 320px;
   height: 200px;
+}
+
+.video-control-panel {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 23px 25px;
+  width: 230px;
+  height: 26px;
+  background-color: $grey;
+}
+
+.video-controls {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  padding: 21px 20px;
+  width: 240px;
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.row {
+  margin: 0 auto;
+  width: 235px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #726c69;
+}
+
+.toggle {
+  margin-left: 35px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translateY(-25%);
+  background-color: $white;
+}
+
+.video-buttons {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: $grey;
+
+  &--replay {
+    margin-right: auto;
+  }
+
+  &--subtitles {
+    width: 32px;
+  }
+
+  &--fullscreen {
+    margin-left: 30px;
+  }
+}
+
+.video-buttons svg {
+  fill: #5c6870;
+}
+
+.video-buttons:hover svg,
+.video-buttons:focus svg {
+  fill: #333333;
+}
+
+.video-buttons:active svg {
+  fill: #b8b8b8;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,13 +106,63 @@
 
   .video__video-block {
     margin: 0 auto;
-    margin-bottom: 76px;
     width: 648px;
   }
 
   .video-clip {
     width: 648px;
     height: 500px;
+  }
+
+  .video-control-panel {
+    align-items: center;
+    margin-top: -95px;
+    padding: 45px 40px;
+    width: 568px;
+    background-color: #000000;
+    opacity: 0.6;
+  }
+
+  .video-controls {
+    position: static;
+    top: 0;
+    left: 0;
+    margin-right: 30px;
+    padding: 0;
+    width: 389px;
+  }
+
+  .row {
+    width: 389px;
+  }
+
+  .toggle {
+    margin-left: 113px;
+  }
+
+  .video-buttons {
+    background-color: #000000;
+  }
+
+  .video-buttons {
+
+    &--replay {
+      order: -1;
+      margin-right: 40px;
+    }
+  }
+
+  .video-buttons svg {
+    fill: #ffffff;
+  }
+
+  .video-buttons:hover svg,
+  .video-buttons:focus svg {
+    fill: #c2c2c2;
+  }
+
+  .video-buttons:active svg {
+    fill: #949494;
   }
 }
 
@@ -56,5 +178,22 @@
   .video-clip {
     width: 800px;
     height: 500px;
+  }
+
+  .video-control-panel {
+    margin-top: -115px;
+    width: 720px;
+  }
+
+  .video-controls {
+    width: 540px;
+  }
+
+  .row {
+    width: 540px;
+  }
+
+  .toggle {
+    margin-left: 113px;
   }
 }
