@@ -19,7 +19,7 @@
 
 .user-review__heading {
   @include heading-font;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 21px;
   text-align: center;
@@ -44,6 +44,12 @@
   &--user-sights,
   &--user-impression {
     margin-bottom: 50px;
+  }
+
+  &--user-sights label,
+  &--user-impression label {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -83,13 +89,14 @@
     width: 280px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:focus {
+    padding: 16px;
     border: 4px solid #e5e5e5;
+    outline: none;
     background-color: $white;
   }
 }
@@ -98,58 +105,49 @@
   display: none;
 }
 
-.user-review__radio,
-.user-review__checkbox {
+.user-review__radio-indicator,
+.user-review__checkbox-indicator {
   display: block;
-  margin-right: 50px;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 55px;
-    transform: translate(-15%, -50%);
-    vertical-align: center;
-    background-color: #f2f2f2;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    background-color: #e5e5e5;
-  }
-
-  &:active::after {
-    background-color: #d5d5d5;
-  }
+  margin-right: 15px;
+  width: 55px;
+  height: 55px;
+  background-color: #f2f2f2;
 }
 
-.user-review__radio {
+.user-review__radio-indicator {
+  border-radius: 50%;
+}
 
-  &::after {
-    border-radius: 50%;
+.user-review__radio:hover + .user-review__radio-indicator,
+.user-review__radio:focus + .user-review__radio-indicator,
+.user-review__checkbox:hover + .user-review__checkbox-indicator,
+.user-review__checkbox:focus + .user-review__checkbox-indicator {
+  background-color: #e5e5e5;
   }
 
-  &:checked::after {
+.user-review__radio:active + .user-review__radio-indicator,
+.user-review__checkbox:active + .user-review__checkbox-indicator {
+  background-color: #d5d5d5;
+}
+
+.user-review__radio:checked + .user-review__radio-indicator {
     width: 19px;
     height: 19px;
     border: 18px solid #f2f2f2;
     background-color: #000000;
-  }
 }
 
-.user-review__checkbox {
-
-  &:checked::after {
+.user-review__checkbox:checked + .user-review__checkbox-indicator {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-  }
 }
 
 .user-review__radio-description,
 .user-review__checkbox-description {
   @include heading-font;
-  display: block;
+  display: inline-block;
+  margin: 0;
   width: 240px;
   text-transform: none;
 }
@@ -186,28 +184,38 @@
     &::before {
       display: none;
     }
-
-    &--full-screen .user-review__heading {
-
-    &::before,
-    &::after {
-      position: absolute;
-      top: 13px;
-      content: "";
-      display: block;
-      width: 123px;
-      height: 1px;
-      background-color: #dbdbdb;
-    }
-
-    &::before {
-      left: 0;
-    }
-
-    &::after {
-      right: 0;
-    }
   }
+
+  .user-review__heading {
+    width: 100%;
+
+    &--decorated {
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 13px;
+        display: block;
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+
+    &--decorated h3 {
+      margin: 0 auto;
+      padding: 0 10px;
+      max-width: 382px;
+    }
   }
 
   .user-review__item {
@@ -258,14 +266,21 @@
       order: -1;
       width: 480px;
     }
-
-    &--full-screen .user-review__heading {
-
-    &::before,
-    &::after {
-      width: 280px;
-    }
   }
+
+  .user-review__heading {
+
+    &--decorated {
+
+      &::before,
+      &::after {
+        width: 280px;
+      }
+    }
+
+    &--decorated h3 {
+      max-width: 380px;
+    }
   }
 
   .user-review__item {

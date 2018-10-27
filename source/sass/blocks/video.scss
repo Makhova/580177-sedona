@@ -45,8 +45,7 @@
   left: 0;
   padding: 21px 20px;
   width: 240px;
-  background-color: #000000;
-  opacity: 0.6;
+  background-color: rgba(102, 102, 102, 0.2) ;
 }
 
 .row {
@@ -119,8 +118,7 @@
     margin-top: -95px;
     padding: 45px 40px;
     width: 568px;
-    background-color: #000000;
-    opacity: 0.6;
+    background-color: rgba(102, 102, 102, 0.6);
   }
 
   .video-controls {
@@ -130,6 +128,7 @@
     margin-right: 30px;
     padding: 0;
     width: 389px;
+    background-color: rgba(85, 77, 71, 0.2);
   }
 
   .row {

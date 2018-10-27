@@ -28,6 +28,7 @@
 
     <div class="container container--page-body">
     <header class="page-body__header main-header main-header--inner">
+      <div class="container container--header container--header-inner">
         <a href="index.html">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -64,6 +65,7 @@
         <svg class="main-header__inner-text" width="229" height="39">
           <use xlink:href="#header-text-inner"></use>
         </svg>
+      </div>
     </header>
 
       <main class="page-body__main">
@@ -75,85 +77,102 @@
         <div class="container container--user-review">
         <form class="user-review" action="echo.htmlacademy.ru" method="post">
           <fieldset class="user-review__fieldset user-review__fieldset--user-info">
-            <div class="container container--fieldset">
             <legend class="user-review__heading">Представьтесь:</legend>
+              <div class="container container--fieldset">
             <p class="user-review__item user-review__item--user-info">
               <label class="user-review__description user-review__description--name" for="name">Имя<sup>*</sup>:</label>
-              <input class="user-review__field user-review__field--name" id="name" name="name" type="text" value="Пётр">
+              <input class="user-review__field user-review__field--name" id="name" name="name" type="text" placeholder="Пётр">
             </p>
             <p class="user-review__item user-review__item--user-info">
               <label class="user-review__description user-review__description--surname" for="surname">Фамилия<sup>*</sup>:</label>
-              <input class="user-review__field user-review__field--surname" id="surname" name="surname" type="text" value="Иванов">
+              <input class="user-review__field user-review__field--surname" id="surname" name="surname" type="text" placeholder="Иванов">
             </p>
             <p class="user-review__item user-review__item--user-info">
               <label class="user-review__description user-review__description--patronymic" for="patronymic">Отчество<sup>*</sup>:</label>
-              <input class="user-review__field user-review__field--patronymic" id="patronymic" name="patronymic" type="text" value="Александрович">
+              <input class="user-review__field user-review__field--patronymic" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
             </p>
           </div>
           </fieldset>
-          <fieldset class="user-review__fieldset user-review__fieldset--user-contacts user-review__fieldset--full-screen">
-            <div class="container container--form">
-            <legend class="user-review__heading">Контактная информация:</legend>
+          <fieldset class="user-review__fieldset user-review__fieldset--user-contacts user-review__fieldset--full-length">
+            <legend class="user-review__heading user-review__heading--decorated"><h3>Контактная информация:</h3></legend>
             <div class="container container--user-contacts">
               <p class="user-review__item user-review__item--user-contacts user-review__item--phone">
                 <label class="user-review__description user-review__description--phone" for="phone"><span>Контактный </span>телефон<sup>*</sup>:</label>
-                <input class="user-review__field user-review__field--phone" id="phone" type="tel" value="Введите телефон">
+                <input class="user-review__field user-review__field--phone" id="phone" type="tel" placeholder="Введите телефон">
               </p>
               <p class="user-review__item user-review__item--user-contacts user-review__item--email">
                 <label class="user-review__description user-review__description--email" for="email">Электронная почта<sup>*</sup>:</label>
-                <input class="user-review__field user-review__field--email" id="email" type="email" value="Введите e-mail">
+                <input class="user-review__field user-review__field--email" id="email" type="email" placeholder="Введите e-mail">
               </p>
             </div>
-          </div>
           </fieldset>
           <p class="user-review__reminder"><sup>*</sup> - обязательные поля</p>
           <fieldset class="user-review__fieldset user-review__fieldset--user-impression">
-            <div class="container container--fieldset">
             <legend class="user-review__heading">Ваше общее впечатление:</legend>
+            <div class="container container--fieldset">
             <p class="user-review__item user-review__item--user-impression">
-              <input class="user-review__radio user-review__radio--positive" id="positive" name="impression" type="radio" value="positive" checked>
-              <label class="user-review__radio-description user-review__radio-description--positive">Скорее положительное</label>
+              <label>
+              <input class="user-review__radio user-review__radio--positive visually-hidden" id="positive" name="impression" type="radio" value="positive" checked>
+              <span class="user-review__radio-indicator"></span>
+              <span class="user-review__radio-description user-review__radio-description--positive">Скорее положительное</span>
+            </label>
             </p>
             <p class="user-review__item user-review__item--user-impression">
-              <input class="user-review__radio user-review__radio--negative" id="negative" name="impression" type="radio" value="negative">
-              <label class="user-review__radio-description user-review__radio-description--negative">Скорее отрицательное</label>
+              <label>
+              <input class="user-review__radio user-review__radio--negative visually-hidden" id="negative" name="impression" type="radio" value="negative">
+              <span class="user-review__radio-indicator"></span>
+              <span class="user-review__radio-description user-review__radio-description--negative">Скорее положительное</span>
+            </label>
             </p>
             <p class="user-review__item user-review__item--user-impression">
-              <input class="user-review__radio user-review__radio--unknown" id="unknown" name="impression" type="radio" value="unknown">
-              <label class="user-review__radio-description user-review__radio-description--unknown">Затрудняюсь ответить</label>
+              <label>
+              <input class="user-review__radio user-review__radio--unknown visually-hidden" id="unknown" name="impression" type="radio" value="unknown">
+              <span class="user-review__radio-indicator"></span>
+              <span class="user-review__radio-description user-review__radio-description--unknown">Скорее положительное</span>
+            </label>
             </p>
           </div>
           </fieldset>
-          <fieldset class="user-review__fieldset user-review__fieldset--user-sights user-review__fieldset--full-screen">
-            <div class="container container--form">
-            <legend class="user-review__heading">Посещённые достопримечательности:</legend>
+          <fieldset class="user-review__fieldset user-review__fieldset--user-sights user-review__fieldset--full-length">
+            <legend class="user-review__heading user-review__heading--decorated"><h3>Посещённые достопримечательности:</h3></legend>
             <div class="container container--user-sights">
               <p class="user-review__item user-review__item--user-sights">
-                <input class="user-review__checkbox user-review__checkbox--devbridge" id="devbridge" name="devbridge" type="checkbox" value="devbridge" checked>
-                <label class="user-review__checkbox-description user-review__checkbox-description--devbridge">Мост Дьявола</label>
+                <label>
+                <input class="visually-hidden user-review__checkbox user-review__checkbox--devbridge" id="devbridge" name="devbridge" type="checkbox" value="devbridge" checked>
+                <span class="user-review__checkbox-indicator"></span>
+                <span class="user-review__checkbox-description user-review__checkbox-description--devbridge">Мост Дьявола</span>
+              </label>
               </p>
               <p class="user-review__item user-review__item--user-sights">
-                <input class="user-review__checkbox user-review__checkbox--bellmountain" id="bellmountain" name="bellmountain" type="checkbox" value="bellmountain" checked>
-                <label class="user-review__checkbox-description user-review__checkbox-description--bellmountain">Гора-Колокол</label>
+                <label>
+                <input class="visually-hidden user-review__checkbox user-review__checkbox--bellmountain" id="bellmountain" name="bellmountain" type="checkbox" value="bellmountain" checked>
+                <span class="user-review__checkbox-indicator"></span>
+                <span class="user-review__checkbox-description user-review__checkbox-description--bellmountain">Гора-Колокол</span>
+              </label>
               </p>
               <p class="user-review__item user-review__item--user-sights">
-                <input class="user-review__checkbox user-review__checkbox--slidepark" id="slidepark" name="slidepark" type="checkbox" value="slidepark" checked>
-                <label class="user-review__checkbox-description user-review__checkbox-description--slidepark">Слайд-парк</label>
+                <label>
+                <input class="visually-hidden user-review__checkbox user-review__checkbox--slidepark" id="slidepark" name="slidepark" type="checkbox" value="slidepark" checked>
+                <span class="user-review__checkbox-indicator"></span>
+                <span class="user-review__checkbox-description user-review__checkbox-description--slidepark">Слайд-парк</span>
+              </label>
               </p>
               <p class="user-review__item user-review__item--user-sights">
-                <input class="user-review__checkbox user-review__checkbox--redrocks" id="redrocks" name="redrocks" type="checkbox" value="redrocks">
-                <label class="user-review__checkbox-description user-review__checkbox-description--redrocks">Красные скалы</label>
+                <label>
+                <input class="visually-hidden user-review__checkbox user-review__checkbox--redrocks" id="redrocks" name="redrocks" type="checkbox" value="redrocks">
+                <span class="user-review__checkbox-indicator"></span>
+                <span class="user-review__checkbox-description user-review__checkbox-description--redrocks">Красные скалы</span>
+              </label>
               </p>
             </div>
-          </div>
           </fieldset>
-          <fieldset class="user-review__fieldset user-review__fieldset--full-screen">
-            <div class="container container--form">
-            <legend class="user-review__heading">Опишите свои эмоции:</legend>
-            <textarea class="user-review__emotions" id="emotions" name="emotions">Опишите подробно все свои восторги</textarea>
+          <fieldset class="user-review__fieldset user-review__fieldset--full-length">
+            <legend class="user-review__heading user-review__heading--decorated"><h3>Опишите свои эмоции:</h3></legend>
+                        <div class="container container--form">
+            <textarea class="user-review__emotions" id="emotions" name="emotions" placeholder="Опишите все свои восторги"></textarea>
+              </div>
           </fieldset>
           <button class="button button--user-review" type="submit">Отправить отзыв</button>
-        </div>
         </form>
       </div>
     </main>

@@ -1,6 +1,6 @@
 .main-footer__hashtag {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
@@ -9,7 +9,7 @@
 
 .main-footer__socials {
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .main-footer__copyright-wrapper {
@@ -41,6 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__hashtag {
+    @include heading-font-tablet;
     margin: 0;
     width: 33%;
   }
