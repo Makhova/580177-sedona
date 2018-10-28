@@ -350,9 +350,9 @@ template {
     .container--features {
       margin: 0 auto;
       padding-top: 47px;
-      padding-right: 35px;
-      padding-left: 35px;
-      width: 186px; }
+      padding-right: 45px;
+      padding-left: 45px;
+      width: 166px; }
     .container--footer {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -395,8 +395,8 @@ template {
     .container--header {
       width: 100%; }
     .container--features {
-      padding: 50px 80px;
-      width: 240px; }
+      padding: 50px 60px;
+      width: 280px; }
     .container--user-review {
       margin: 0 auto;
       width: 960px; }
@@ -462,20 +462,13 @@ template {
 
 .main-header__logo {
   position: absolute;
-  top: 55px;
+  top: -55px;
+  left: 50%;
+  z-index: 5;
   width: 103px;
   height: 86px;
-  margin-left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
-  .main-header__logo--inner {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: 5;
-    margin: 0;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
 
 .main-header__inner-text {
   position: absolute;
@@ -533,6 +526,15 @@ template {
   .main-header__inner-text {
     top: 160px; } }
 
+.main-nav {
+  position: relative;
+  min-height: 0;
+  padding-bottom: 55px;
+  background-color: #ffffff;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1; }
+
 .main-nav__button {
   position: absolute;
   padding: 0;
@@ -557,8 +559,6 @@ template {
   fill: #ffffff; }
 
 .main-nav__menu {
-  position: relative;
-  z-index: 5;
   margin: 0; }
 
 @media (min-width: 768px) {
@@ -652,7 +652,7 @@ template {
     background-position: 0 -16px;
     background-size: 100%; }
   .features__item--blue {
-    padding-top: 43px;
+    padding-top: 40px;
     color: #ffffff;
     background-color: #81b3d2; }
   .features__item--grey {
@@ -711,7 +711,8 @@ template {
     font-size: 21px;
     line-height: 26px;
     margin-top: 48px;
-    margin-bottom: 33px; }
+    margin-bottom: 33px;
+    padding: 0 50px; }
   .features__intro {
     margin-bottom: 52px; }
   .features__list {
@@ -727,19 +728,24 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-top: 0; }
-    .features__item--grey {
-      padding-bottom: 43px;
-      width: 33.3%; }
     .features__item:first-child {
+      padding-top: 0;
       background-image: none; }
     .features__item::after {
       display: none; }
+    .features__item--grey {
+      padding-bottom: 43px;
+      width: 33.33%; }
   .features__heading {
     font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 21px;
-    line-height: 26px; }
-  .fetures__number {
-    margin-bottom: 27px; }
+    line-height: 26px;
+    margin-bottom: 5px;
+    padding: 0 5px; }
+  .features__number {
+    margin-bottom: 24px; }
+  .features__description--grey {
+    padding-bottom: 0; }
   .features__picture-block {
     width: 512px;
     height: 256px; }
@@ -753,11 +759,16 @@ template {
 
 @media (min-width: 1200px) {
   .features__slogan {
-    margin-bottom: 58px; }
+    margin-bottom: 32px;
+    padding: 0 300px; }
   .features__item--grey {
     padding-bottom: 15px; }
-  .features__heading {
-    margin-bottom: 14px; }
+  .features__heading--blue {
+    padding: 0 50px; }
+  .features__heading--grey {
+    padding: 0 60px; }
+  .features__description {
+    padding-bottom: 0; }
   .features__picture-block {
     width: 800px; }
   .features__picture {
@@ -808,6 +819,7 @@ template {
         justify-content: space-around;
     padding: 0; }
   .details-list__item {
+    margin-bottom: 0;
     padding: 133px 35px 49px;
     width: 186px;
     text-align: center; }
@@ -837,11 +849,9 @@ template {
     padding-right: 55px;
     padding-left: 55px;
     width: 290px; }
-  .details-list__heading {
-    width: 310px; }
   .details-list__description {
     margin-bottom: 29px;
-    width: 310px; } }
+    padding: 0; } }
 
 .hotel-booking {
   padding-top: 30px; }
@@ -875,13 +885,17 @@ template {
     margin-bottom: 31px;
     font-size: 30px; }
   .hotel-booking__intro {
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    padding: 0 100px; }
   .hotel-booking__map {
     margin-top: 57px;
     margin-bottom: 32px;
     height: 350px; } }
 
 @media (min-width: 1200px) {
+  .hotel-booking__intro {
+    margin-bottom: 50px;
+    padding: 0 400px; }
   .hotel-booking__map {
     margin-bottom: 40px;
     width: 1200px;
@@ -929,6 +943,8 @@ template {
 @media (min-width: 1200px) {
   .button {
     width: 480px; }
+    .button--hotel-booking {
+      width: 458px; }
     .button--popup-failure {
       width: 272px; }
     .button--popup-success {
@@ -1054,6 +1070,7 @@ template {
 .reviews-intro {
   margin: 0;
   margin-bottom: 17px;
+  padding: 0 100px;
   line-height: 24px;
   font-size: 14px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1213,7 +1230,7 @@ template {
   font-size: 18px;
   line-height: 26px;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 15px;
   width: 240px;
   text-transform: none; }
 
@@ -1241,11 +1258,9 @@ template {
     .user-review__fieldset--user-info::before {
       content: "";
       position: absolute;
-      top: 178px;
-      left: -144px;
       display: block;
-      width: 292px;
-      height: 1px;
+      width: 1px;
+      height: 292px;
       background-color: #eeeeee;
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg); }

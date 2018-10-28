@@ -38,6 +38,7 @@
 
   .hotel-booking__intro {
     margin-bottom: 45px;
+    padding: 0 100px;
   }
 
   .hotel-booking__map {
@@ -48,6 +49,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .hotel-booking__intro {
+    margin-bottom: 50px;
+    padding: 0 400px;
+  }
+
   .hotel-booking__map {
     margin-bottom: 40px;
     width: 1200px;

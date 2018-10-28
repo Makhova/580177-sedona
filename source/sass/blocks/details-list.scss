@@ -44,6 +44,7 @@
   }
 
   .details-list__item {
+    margin-bottom: 0;
     padding: 133px 35px 49px;
     width: 186px;
     text-align: center;
@@ -82,12 +83,8 @@
     width: 290px;
   }
 
-  .details-list__heading {
-    width: 310px;
-  }
-
   .details-list__description {
     margin-bottom: 29px;
-    width: 310px;
+    padding: 0;
   }
 }

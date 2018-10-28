@@ -180,7 +180,7 @@
 .user-review__checkbox-description {
   @include heading-font;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 15px;
   width: 240px;
   text-transform: none;
 }
@@ -210,11 +210,9 @@
       &::before {
         content: "";
         position: absolute;
-        top: 178px;
-        left: -144px;
         display: block;
-        width: 292px;
-        height: 1px;
+        width: 1px;
+        height: 292px;
         background-color: $grey;
         transform: rotate(90deg);
       }
