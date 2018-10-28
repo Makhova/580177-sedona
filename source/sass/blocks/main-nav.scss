@@ -1,10 +1,4 @@
-.main-nav {
-  position: relative;
-  min-height: 0;
-  padding-bottom: 55px;
-  background-color: $white;
-  order: -1;
-}
+
 
 .main-nav__button {
   position: absolute;
@@ -14,7 +8,7 @@
   background-repeat: no-repeat;
 
   &--open {
-    top: 17px;
+    bottom: 17px;
     right: 20px;
     background-image:  url("../img/icon-menu.svg")
   }
@@ -44,12 +38,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    background-color: $white;
-  }
-
-  .main-nav__menu {
-    position: static;
-    z-index: 0;
+    padding: 20px 0;
   }
 
   .main-nav__button {

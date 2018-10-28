@@ -1,16 +1,17 @@
 .details-list {
   padding: 0;
   padding-top: 12px;
-  padding-bottom: 29px;
-  width: 100%;
+  padding-bottom: 23px;
   list-style: none;
   background-color: $white;
 }
 
 .details-list__item {
   position: relative;
-  width: 230px;
+  margin: 0;
+  margin-bottom: 20px;
   padding-left: 70px;
+  width: 230px;
   color: #000000;
   text-align: left;
 }
@@ -27,10 +28,12 @@
 .details-list__heading {
   @include heading-font;
   margin-bottom: 5px;
+  padding: 0 10px;
 }
 
 .details-list__description {
   @include paragraph-font;
+  padding: 0 10px;
 }
 
 @media (min-width: $tablet-width) {

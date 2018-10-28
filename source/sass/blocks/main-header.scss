@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 673px;
+  min-height: 668px;
   background-color: $blue;
   background-image: url("../img/bg-intro-triangle-mobile.svg"),
                     url("../img/text-sedona-index.svg"),
@@ -29,6 +29,8 @@
 }
 
 .main-header__logo {
+  position: absolute;
+  top: 55px;
   width: 103px;
   height: 86px;
   margin-left: 50%;
@@ -38,9 +40,9 @@
     position: absolute;
     top: 0;
     left: 50%;
+    z-index: 5;
     margin: 0;
     transform: translateX(-50%);
-    z-index: 5;
   }
 }
 

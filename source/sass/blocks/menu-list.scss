@@ -1,5 +1,5 @@
 .menu-list {
-display: none;
+
   padding: 0;
   list-style: none;
 
@@ -43,7 +43,6 @@ display: none;
 @media (min-width: 768px) {
   .menu-list {
     display: flex;
-    padding: 16px 0;
   }
 
   .menu-list__item {

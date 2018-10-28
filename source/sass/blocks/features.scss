@@ -2,12 +2,13 @@
   @include heading-font;
   margin-top: 37px;
   margin-bottom: 30px;
+  padding: 0 10px;
   text-align: center;
 }
 
 .features__intro {
   @include paragraph-font;
-  margin-bottom: 27px;
+  margin-bottom: 32px;
   text-align: center;
 }
 
@@ -22,6 +23,7 @@
   width: 100%;
 
   &:first-child {
+    padding-top: 64px;
     background-image: url("../img/bg-triangle.svg");
     background-repeat: no-repeat;
     background-position: 0 -16px;
@@ -29,7 +31,7 @@
   }
 
   &--blue {
-    padding-top: 61px;
+    padding-top: 43px;
     color: $white;
     background-color: $blue;
   }
@@ -57,6 +59,7 @@
   @include heading-font;
   margin: 0;
   margin-bottom: 10px;
+  padding: 0 10px;
   text-align: center;
 }
 
@@ -73,7 +76,7 @@
   text-align: center;
 
   &--blue {
-    padding-bottom: 45px;
+    padding-bottom: 40px;
   }
 
   &--grey {
