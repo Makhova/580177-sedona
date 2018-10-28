@@ -7,22 +7,6 @@
     width: 100%;
   }
 
-  &--header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  &--header-inner {
-    position: relative;
-    min-height: 160px;
-    background-image: url("../img/bg-intro-triangle-mobile.svg"),
-                      url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 100%, -225px 100%;
-    background-size: 100%, auto;
-  }
-
   &--footer {
     padding-bottom: 25px;
   }

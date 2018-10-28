@@ -1,4 +1,8 @@
 .main-nav {
+  position: relative;
+  min-height: 0;
+  padding-bottom: 55px;
+  background-color: $white;
   order: -1;
 }
 
@@ -7,10 +11,12 @@
   padding: 0;
   border: none;
   background-color: $white;
+  background-repeat: no-repeat;
 
   &--open {
-    top: 240px;
+    top: 17px;
     right: 20px;
+    background-image:  url("../img/icon-menu.svg")
   }
 
   &--close {
@@ -19,13 +25,6 @@
     right: 20px;
     top: 17px;
     background-image:  url("../img/icon-cross.svg");
-  }
-}
-
-.main-header {
-
-  &--inner .main-nav__button {
-    top: -38px;
   }
 }
 
