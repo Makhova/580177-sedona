@@ -1070,7 +1070,7 @@ template {
 .reviews-intro {
   margin: 0;
   margin-bottom: 17px;
-  padding: 0 100px;
+  padding: 0 10px;
   line-height: 24px;
   font-size: 14px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1078,7 +1078,8 @@ template {
 
 @media (min-width: 768px) {
   .reviews-intro {
-    margin-bottom: 53px; } }
+    margin-bottom: 53px;
+    padding: 0 300px; } }
 
 @media (min-width: 1200px) {
   .reviews-intro {

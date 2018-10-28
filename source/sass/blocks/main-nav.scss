@@ -1,35 +1,54 @@
-.main-nav {
+@media (max-width: $mobile-width-only) {
+  .main-nav {
   position: relative;
   min-height: 0;
   padding-bottom: 55px;
   background-color: $white;
   order: -1;
+
+  &--opened .menu-list {
+    display: block;
+  }
+
+  &--opened .main-nav__button {
+    top: 17px;
+  }
+
+  &--opened .menu-icon {
+    display: none;
+  }
+
+  &--opened .icon-cross {
+    fill: $white;
+  }
+
+  &--closed .menu-list {
+    display: none;
+  }
+
+  &--closed .main-nav__button {
+    bottom: 17px;
+  }
+
+  &--closed .menu-icon {
+    fill: $blue;
+  }
+
+  &--closed .icon-cross {
+    display: none;
+  }
+  }
 }
 
 .main-nav__button {
+  background-color: transparent;
   position: absolute;
+  right: 20px;
   padding: 0;
   border: none;
-  background-color: $white;
+  width: 23px;
+  height: 21px;
   background-repeat: no-repeat;
-
-  &--open {
-    bottom: 17px;
-    right: 20px;
-    background-image:  url("../img/icon-menu.svg")
-  }
-
-  &--close {
-    position: absolute;
-    display: none;
-    right: 20px;
-    top: 17px;
-    background-image:  url("../img/icon-cross.svg");
-  }
-}
-
-.main-nav__button .menu-icon {
-  fill: $blue;
 }
 
 .main-nav__button .icon-cross {
@@ -42,7 +61,8 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    padding: 20px 0;
+    padding: 18px 0;
+    background-color: $white;
   }
 
   .main-nav__button {
