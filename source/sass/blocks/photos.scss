@@ -1,9 +1,24 @@
 .photos__intro {
   @include paragraph-font;
-  margin-bottom: 18px;
+  margin-bottom: 28px;
+  padding: 0 20px;
   text-align: center;
 }
 
 .photos__all-photo {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__intro {
+    margin-bottom: 74px;
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__intro {
+    margin-bottom: 74px;
+    padding: 0 350px;
+  }
 }
