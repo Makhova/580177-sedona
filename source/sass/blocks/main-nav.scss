@@ -18,32 +18,31 @@
     display: none;
   }
 
-  &--opened .icon-cross {
+ &--opened .icon-cross {
+   display: block;
     fill: $white;
   }
+}
 
-  &--closed .menu-list {
+.menu-list {
     display: none;
   }
 
-  &--closed .main-nav__button {
-    bottom: 17px;
-  }
 
-  &--closed .menu-icon {
+ .menu-icon {
     fill: $blue;
   }
 
-  &--closed .icon-cross {
+.icon-cross {
     display: none;
   }
-  }
-}
+
 
 .main-nav__button {
   background-color: transparent;
   position: absolute;
   right: 20px;
+  bottom: 17px;
   padding: 0;
   border: none;
   width: 23px;
@@ -51,10 +50,7 @@
   background-repeat: no-repeat;
 }
 
-.main-nav__button .icon-cross {
-  fill: #ffffff;
 }
-
 .main-nav__menu {
   margin: 0;
 }
