@@ -146,7 +146,6 @@
   }
 
   .features__description {
-
     &--grey {
       padding-bottom: 0;
     }
@@ -170,18 +169,16 @@
 @media (min-width: $desktop-width) {
   .features__slogan {
     margin-bottom: 32px;
-    padding: 0 300px
+    padding: 0 300px;
   }
 
   .features__item {
-
     &--grey {
       padding-bottom: 15px;
     }
   }
 
   .features__heading {
-
     &--blue {
       padding: 0 50px;
     }

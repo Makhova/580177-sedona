@@ -7,12 +7,12 @@
       <link href="css/style.min.css" rel="stylesheet">
     </head>
 
-    <body class="page-body">
-      <div style="display: none">
-        <include src="build/img/sprite.svg"></include>
-      </div>
+  <body class="page-body">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
-      <div class="container container--page-body">
+    <div class="container container--page-body">
       <header class="page-body__header main-header">
         <a href="#">
           <picture>
@@ -22,12 +22,12 @@
           </picture>
         </a>
         <nav class="main-header__nav main-nav">
-          <button class="main-nav__button main-nav__button--closed" type="button"><span class="visually-hidden">Открыть меню</span>
-            <svg class="menu-icon" width="23" height="22">
+          <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span>
+            <svg class="main-nav__menu-icon" width="23" height="22">
               <use xlink:href="#icon-menu"></use>
             </svg>
             <svg width="23" height="22">
-              <use class="icon-cross" xlink:href="#icon-cross"></use>
+              <use class="main-nav__icon-cross" xlink:href="#icon-cross"></use>
             </svg>
           </button>
           <ul class="main-nav__menu menu-list menu-list--closed">

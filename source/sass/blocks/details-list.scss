@@ -45,8 +45,11 @@
 
   .details-list__item {
     margin-bottom: 0;
-    padding: 133px 35px 49px;
-    width: 33,33%;
+    padding-top: 133px;
+    padding-right: 35px;
+    padding-bottom: 49px;
+    padding-left: 35px;
+    width: 33, 33%;
     text-align: center;
 
     &:nth-child(2) {

@@ -15,7 +15,7 @@
     padding-bottom: 25px;
   }
 
-  &--user-contacts {;
+  &--user-contacts {
     padding-bottom: 31px;
   }
 
@@ -65,7 +65,7 @@
 
   &--user-sights {
     margin-bottom: 23px;
-    }
+  }
 
   &--user-info {
     display: flex;
@@ -122,10 +122,14 @@
   }
 
   &:focus {
-
+    padding: 16px;
     border: 4px solid #e5e5e5;
     outline: none;
     background-color: $white;
+  }
+
+  &:invalid {
+    border-color: #ff0000;
   }
 }
 
@@ -169,29 +173,42 @@
   border-radius: 5px;
 }
 
-.user-review__radio:hover + .user-review__radio-indicator,
-.user-review__radio:focus + .user-review__radio-indicator,
-.user-review__checkbox:hover + .user-review__checkbox-indicator,
-.user-review__checkbox:focus + .user-review__checkbox-indicator {
-  background-color: #e5e5e5;
-  }
-
-.user-review__radio:active + .user-review__radio-indicator,
-.user-review__checkbox:active + .user-review__checkbox-indicator {
-  background-color: #d5d5d5;
-}
-
 .user-review__radio:checked + .user-review__radio-indicator {
-    width: 19px;
-    height: 19px;
-    border: 18px solid #f2f2f2;
-    background-color: #000000;
+  width: 19px;
+  height: 19px;
+  border: 18px solid #f2f2f2;
+  background-color: #000000;
 }
 
 .user-review__checkbox:checked + .user-review__checkbox-indicator {
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.user-review__radio:hover + .user-review__radio-indicator,
+.user-review__radio:focus + .user-review__radio-indicator,
+.user-review__radio:active + .user-review__radio-indicator,
+.user-review__radio:checked:active + .user-review__radio-indicator,
+.user-review__checkbox:active + .user-review__checkbox-indicator,
+.user-review__checkbox:checked:active + .user-review__checkbox-indicator {
+  background-color: #d5d5d5;
+}
+
+.user-review__radio:checked:hover + .user-review__radio-indicator,
+.user-review__radio:checked:focus + .user-review__radio-indicator {
+  border-color: #e5e5e5;
+  background-color: $white;
+}
+
+.user-review__checkbox:hover + .user-review__checkbox-indicator,
+.user-review__checkbox:focus + .user-review__checkbox-indicator,
+.user-review__checkbox:checked:hover + .user-review__checkbox-indicator,
+.user-review__checkbox:checked:focus + .user-review__checkbox-indicator {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #e5e5e5;
+  background-color: $white;
 }
 
 .user-review__radio-description,
@@ -209,6 +226,13 @@
   min-height: 120px;
   border: none;
   background-color: $grey;
+
+  &:focus {
+    padding: 16px;
+    border: 4px solid #e5e5e5;
+    background-color: $white;
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -224,7 +248,6 @@
     border: none;
 
     &--user-info {
-
       &::before {
         content: "";
         position: absolute;
@@ -250,6 +273,7 @@
 
   .user-review__heading {
     @include heading-font-tablet;
+    position: relative;
     margin-bottom: 60px;
 
     &::before {
@@ -265,7 +289,6 @@
     }
 
     &--decorated {
-
       &::before,
       &::after {
         content: "";
@@ -294,7 +317,6 @@
   }
 
   .user-review__item {
-
     &--user-impression {
       margin-bottom: 25px;
     }
@@ -308,12 +330,7 @@
     }
   }
 
-  .user-review__heading {
-    position: relative;
-  }
-
   .user-review__description {
-
     &--name,
     &--surname,
     &--patronymic {
@@ -327,7 +344,6 @@
   }
 
   .user-review__field {
-
     &--name {
       width: 216px;
     }
@@ -367,7 +383,6 @@
   }
 
   .user-review__fieldset {
-
     &--user-info {
       width: 480px;
     }
@@ -387,13 +402,11 @@
   }
 
   .user-review__heading {
-
     &--user-contacts {
       margin-bottom: 73px;
     }
 
     &--decorated {
-
       &::before,
       &::after {
         width: 280px;
@@ -406,7 +419,6 @@
   }
 
   .user-review__item {
-
     &--user-info {
       padding-left: 25px;
     }
@@ -418,7 +430,7 @@
       margin: 0;
     }
 
-    &--phone{
+    &--phone {
       margin-right: 80px;
       width: 400px;
     }
@@ -438,7 +450,6 @@
   }
 
   .user-review__description {
-
     &--phone,
     &--email {
       margin-bottom: 0;
@@ -462,7 +473,6 @@
   }
 
   .user-review__field {
-
     &--name {
       width: 350px;
     }
