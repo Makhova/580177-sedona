@@ -153,7 +153,8 @@
 
   .features__picture-block {
     width: 512px;
-    height: 256px;
+    min-height: 256px;
+    overflow: hidden;
 
     &--bridge {
       order: -1;
