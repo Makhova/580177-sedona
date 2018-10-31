@@ -9,11 +9,11 @@
 
   <body class="page-body">
     <div style="display: none">
-     <include src="build/img/sprite.svg"></include>
+      <include src="build/img/sprite.svg"></include>
     </div>
 
     <div class="container container--page-body">
-    <header class="page-body__header main-header main-header--inner">
+      <header class="page-body__header main-header main-header--inner">
         <a href="index.html">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -22,9 +22,12 @@
           </picture>
         </a>
         <nav class="main-header__nav main-nav">
-          <button class="main-nav__button main-nav__button--open" type="button"><span class="visually-hidden">Открыть меню</span>
-            <svg class="menu-icon" width="23" height="22">
+          <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span>
+            <svg class="main-nav__menu-icon" width="23" height="22">
               <use xlink:href="#icon-menu"></use>
+            </svg>
+            <svg width="23" height="22">
+              <use class="main-nav__icon-cross" xlink:href="#icon-cross"></use>
             </svg>
           </button>
             <ul class="main-nav__menu menu-list">
@@ -41,174 +44,170 @@
               <a class="menu-list__link" href="#">HTMLAcademy</a>
             </li>
           </ul>
-          <button class="main-nav__button main-nav__button--close" type="button"><span class="visually-hidden">Закрыть меню</span>
-            <svg width="23" height="22">
-              <use class="icon-cross" xlink:href="#icon-cross"></use>
-            </svg>
-          </button>
         </nav>
-    </header>
-
+      </header>
       <main class="page-body__main">
-          <div class="container">
-            <h1 class="page-heading">Оставьте свой отзыв</h1>
-              <p class="reviews-intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещённых вами достопримечательностях</p>
-            </div>
-
+        <div class="container">
+          <h1 class="page-heading">Оставьте свой отзыв</h1>
+          <p class="reviews-intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещённых вами достопримечательностях</p>
+        </div>
         <div class="container container--user-review">
-        <form class="user-review" action="echo.htmlacademy.ru" method="post">
-          <fieldset class="user-review__fieldset user-review__fieldset--user-info">
-            <h3 class="user-review__heading"><span>Представьтесь:</span></h3>
+          <form class="user-review" action="echo.htmlacademy.ru" method="post">
+            <fieldset class="user-review__fieldset user-review__fieldset--user-info">
+              <h3 class="user-review__heading"><span>Представьтесь:</span></h3>
               <div class="container container--fieldset">
-            <p class="user-review__item user-review__item--user-info">
-              <label class="user-review__description user-review__description--name" for="name">Имя<sup>*</sup>:</label>
-              <input class="user-review__field user-review__field--name" id="name" name="name" type="text" placeholder="Пётр">
-            </p>
-            <p class="user-review__item user-review__item--user-info">
-              <label class="user-review__description user-review__description--surname" for="surname">Фамилия<sup>*</sup>:</label>
-              <input class="user-review__field user-review__field--surname" id="surname" name="surname" type="text" placeholder="Иванов">
-            </p>
-            <p class="user-review__item user-review__item--user-info">
-              <label class="user-review__description user-review__description--patronymic" for="patronymic">Отчество<sup>*</sup>:</label>
-              <input class="user-review__field user-review__field--patronymic" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
-            </p>
-          </div>
-          </fieldset>
-          <fieldset class="user-review__fieldset user-review__fieldset--user-contacts user-review__fieldset--full-length">
-            <h3 class="user-review__heading user-review__heading user-review__heading--user-contacts user-review__heading--decorated"><span>Контактная информация:</span></h3>
-            <div class="container container--user-contacts">
-              <p class="user-review__item user-review__item--user-contacts user-review__item--phone">
-                <label class="user-review__description user-review__description--phone" for="phone"><span>Контактный </span>телефон<sup>*</sup>:</label>
-                <input class="user-review__field user-review__field--phone" id="phone" type="tel" placeholder="Введите телефон">
-                <span class="user-review__icon user-review__icon--phone"></span>
-              </p>
-              <p class="user-review__item user-review__item--user-contacts user-review__item--email">
-                <label class="user-review__description user-review__description--email" for="email">Электронная почта<sup>*</sup>:</label>
-                <input class="user-review__field user-review__field--email" id="email" type="email" placeholder="Введите e-mail">
-                <span class="user-review__icon user-review__icon--email"></span>
-              </p>
-            </div>
-          </fieldset>
-          <p class="user-review__reminder"><sup>*</sup> - обязательные поля</p>
-          <fieldset class="user-review__fieldset user-review__fieldset--user-impression">
-            <h3 class="user-review__heading"><span>Ваше общее впечатление:</span></h3>
-            <div class="container container--fieldset">
-            <p class="user-review__item user-review__item--user-impression">
-              <label>
-              <input class="user-review__radio user-review__radio--positive visually-hidden" id="positive" name="impression" type="radio" value="positive" checked>
-              <span class="user-review__radio-indicator"></span>
-              <span class="user-review__radio-description user-review__radio-description--positive">Скорее положительное</span>
-            </label>
-            </p>
-            <p class="user-review__item user-review__item--user-impression">
-              <label>
-              <input class="user-review__radio user-review__radio--negative visually-hidden" id="negative" name="impression" type="radio" value="negative">
-              <span class="user-review__radio-indicator"></span>
-              <span class="user-review__radio-description user-review__radio-description--negative">Скорее отрицательное</span>
-            </label>
-            </p>
-            <p class="user-review__item user-review__item--user-impression">
-              <label>
-              <input class="user-review__radio user-review__radio--unknown visually-hidden" id="unknown" name="impression" type="radio" value="unknown">
-              <span class="user-review__radio-indicator"></span>
-              <span class="user-review__radio-description user-review__radio-description--unknown">Затрудняюсь ответить</span>
-            </label>
-            </p>
-          </div>
-          </fieldset>
-          <fieldset class="user-review__fieldset user-review__fieldset--user-sights user-review__fieldset--full-length">
-            <h3 class="user-review__heading user-review__heading--user-sights user-review__heading--decorated"><span>Посещённые достопримечательности:</span></h3>
-            <div class="container container--user-sights">
-              <p class="user-review__item user-review__item--user-sights">
-                <label>
-                <input class="visually-hidden user-review__checkbox user-review__checkbox--devbridge" id="devbridge" name="devbridge" type="checkbox" value="devbridge" checked>
-                <span class="user-review__checkbox-indicator"></span>
-                <span class="user-review__checkbox-description user-review__checkbox-description--devbridge">Мост Дьявола</span>
-              </label>
-              </p>
-              <p class="user-review__item user-review__item--user-sights">
-                <label>
-                <input class="visually-hidden user-review__checkbox user-review__checkbox--bellmountain" id="bellmountain" name="bellmountain" type="checkbox" value="bellmountain" checked>
-                <span class="user-review__checkbox-indicator"></span>
-                <span class="user-review__checkbox-description user-review__checkbox-description--bellmountain">Гора-Колокол</span>
-              </label>
-              </p>
-              <p class="user-review__item user-review__item--user-sights">
-                <label>
-                <input class="visually-hidden user-review__checkbox user-review__checkbox--slidepark" id="slidepark" name="slidepark" type="checkbox" value="slidepark" checked>
-                <span class="user-review__checkbox-indicator"></span>
-                <span class="user-review__checkbox-description user-review__checkbox-description--slidepark">Слайд-парк</span>
-              </label>
-              </p>
-              <p class="user-review__item user-review__item--user-sights">
-                <label>
-                <input class="visually-hidden user-review__checkbox user-review__checkbox--redrocks" id="redrocks" name="redrocks" type="checkbox" value="redrocks">
-                <span class="user-review__checkbox-indicator"></span>
-                <span class="user-review__checkbox-description user-review__checkbox-description--redrocks">Красные скалы</span>
-              </label>
-              </p>
-            </div>
-          </fieldset>
-          <fieldset class="user-review__fieldset user-review__fieldset--user-emotions user-review__fieldset--full-length">
-            <h3 class="user-review__heading user-review__heading--decorated"><span>Опишите свои эмоции:</span></h3>
+                <p class="user-review__item user-review__item--user-info">
+                  <label class="user-review__description user-review__description--name" for="name">Имя<sup>*</sup>:</label>
+                  <input class="user-review__field user-review__field--name" id="name" name="name" type="text" placeholder="Пётр" required>
+                </p>
+                <p class="user-review__item user-review__item--user-info">
+                  <label class="user-review__description user-review__description--surname" for="surname">Фамилия<sup>*</sup>:</label>
+                  <input class="user-review__field user-review__field--surname" id="surname" name="surname" type="text" placeholder="Иванов" required>
+                </p>
+                <p class="user-review__item user-review__item--user-info">
+                  <label class="user-review__description user-review__description--patronymic" for="patronymic">Отчество:</label>
+                  <input class="user-review__field user-review__field--patronymic" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="user-review__fieldset user-review__fieldset--user-contacts user-review__fieldset--full-length">
+              <h3 class="user-review__heading user-review__heading user-review__heading--user-contacts user-review__heading--decorated"><span>Контактная информация:</span></h3>
+              <div class="container container--user-contacts">
+                <p class="user-review__item user-review__item--user-contacts user-review__item--phone">
+                  <label class="user-review__description user-review__description--phone" for="phone"><span>Контактный </span>телефон<sup>*</sup>:</label>
+                  <input class="user-review__field user-review__field--phone" id="phone" type="tel" placeholder="Введите телефон" required>
+                  <span class="user-review__icon user-review__icon--phone"></span>
+                </p>
+                <p class="user-review__item user-review__item--user-contacts user-review__item--email">
+                  <label class="user-review__description user-review__description--email" for="email">Электронная почта<sup>*</sup>:</label>
+                  <input class="user-review__field user-review__field--email" id="email" type="email" placeholder="Введите e-mail" required>
+                  <span class="user-review__icon user-review__icon--email"></span>
+                </p>
+              </div>
+            </fieldset>
+            <p class="user-review__reminder"><sup>*</sup> - обязательные поля</p>
+            <fieldset class="user-review__fieldset user-review__fieldset--user-impression">
+              <h3 class="user-review__heading"><span>Ваше общее впечатление:</span></h3>
+              <div class="container container--fieldset">
+                <p class="user-review__item user-review__item--user-impression">
+                  <label>
+                    <input class="user-review__radio user-review__radio--positive visually-hidden" id="positive" name="impression" type="radio" value="positive" checked>
+                    <span class="user-review__radio-indicator"></span>
+                    <span class="user-review__radio-description user-review__radio-description--positive">Скорее положительное</span>
+                  </label>
+                </p>
+                <p class="user-review__item user-review__item--user-impression">
+                  <label>
+                    <input class="user-review__radio user-review__radio--negative visually-hidden" id="negative" name="impression" type="radio" value="negative">
+                    <span class="user-review__radio-indicator"></span>
+                    <span class="user-review__radio-description user-review__radio-description--negative">Скорее отрицательное</span>
+                  </label>
+                </p>
+                <p class="user-review__item user-review__item--user-impression">
+                  <label>
+                    <input class="user-review__radio user-review__radio--unknown visually-hidden" id="unknown" name="impression" type="radio" value="unknown">
+                    <span class="user-review__radio-indicator"></span>
+                    <span class="user-review__radio-description user-review__radio-description--unknown">Затрудняюсь ответить</span>
+                  </label>
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="user-review__fieldset user-review__fieldset--user-sights user-review__fieldset--full-length">
+              <h3 class="user-review__heading user-review__heading--user-sights user-review__heading--decorated"><span>Посещённые достопримечательности:</span></h3>
+              <div class="container container--user-sights">
+                <p class="user-review__item user-review__item--user-sights">
+                  <label>
+                    <input class="visually-hidden user-review__checkbox user-review__checkbox--devbridge" id="devbridge" name="devbridge" type="checkbox" value="devbridge" checked>
+                    <span class="user-review__checkbox-indicator"></span>
+                    <span class="user-review__checkbox-description user-review__checkbox-description--devbridge">Мост Дьявола</span>
+                  </label>
+                </p>
+                <p class="user-review__item user-review__item--user-sights">
+                  <label>
+                    <input class="visually-hidden user-review__checkbox user-review__checkbox--bellmountain" id="bellmountain" name="bellmountain" type="checkbox" value="bellmountain" checked>
+                    <span class="user-review__checkbox-indicator"></span>
+                    <span class="user-review__checkbox-description user-review__checkbox-description--bellmountain">Гора-Колокол</span>
+                  </label>
+                </p>
+                <p class="user-review__item user-review__item--user-sights">
+                  <label>
+                    <input class="visually-hidden user-review__checkbox user-review__checkbox--slidepark" id="slidepark" name="slidepark" type="checkbox" value="slidepark" checked>
+                    <span class="user-review__checkbox-indicator"></span>
+                    <span class="user-review__checkbox-description user-review__checkbox-description--slidepark">Слайд-парк</span>
+                  </label>
+                </p>
+                <p class="user-review__item user-review__item--user-sights">
+                  <label>
+                    <input class="visually-hidden user-review__checkbox user-review__checkbox--redrocks" id="redrocks" name="redrocks" type="checkbox" value="redrocks">
+                    <span class="user-review__checkbox-indicator"></span>
+                    <span class="user-review__checkbox-description user-review__checkbox-description--redrocks">Красные скалы</span>
+                  </label>
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="user-review__fieldset user-review__fieldset--user-emotions user-review__fieldset--full-length">
+              <h3 class="user-review__heading user-review__heading--decorated"><span>Опишите свои эмоции:</span></h3>
               <div class="container container--form">
                 <textarea class="user-review__emotions" id="emotions" name="emotions" placeholder="Опишите все свои восторги"></textarea>
               </div>
-          </fieldset>
-          <button class="button button--user-review" type="submit">Отправить отзыв</button>
-        </form>
-      </div>
-    </main>
-
-    <footer class="page-body__footer main-footer">
-      <div class="container container--footer">
-        <p class="main-footer__hashtag">#VisitSedona</p>
-        <ul class="main-footer__socials socials-list">
-          <li class="socials-list__item socials-list__item--twitter">
-            <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Твиттер</span>
-              <svg class="socials-list__icon" width="20" height="14">
-                <use xlink:href="#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-list__item socials-list__item--facebook">
-            <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Фейсбук</span>
-              <svg class="socials-list__icon socials-list__icon--facebook" width="9" height="18">
-                <use xlink:href="#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-list__item socials-list__item--youtube">
-            <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Ютьюб</span>
-              <svg class="socials-list__icon" width="20" height="14">
-                <use xlink:href="#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="main-footer__copyright-wrapper">
-          <p class="main-footer__copyright">Разработано</p>
-          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Сайт HTML Академии</span>
-            <svg class="main-footer__copyright-logo" width="27" height="34">
-              <use xlink:href="#logo-htmlacademy"></use>
-            </svg>
-          </a>
+            </fieldset>
+            <button class="button button--user-review" type="submit">Отправить отзыв</button>
+          </form>
         </div>
-      </div>
-    </footer>
-  </div>
+      </main>
+      <footer class="page-body__footer main-footer">
+        <div class="container container--footer">
+          <p class="main-footer__hashtag">#VisitSedona</p>
+          <ul class="main-footer__socials socials-list">
+            <li class="socials-list__item socials-list__item--twitter">
+              <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Твиттер</span>
+                <svg class="socials-list__icon" width="20" height="14">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item socials-list__item--facebook">
+              <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Фейсбук</span>
+                <svg class="socials-list__icon socials-list__icon--facebook" width="9" height="18">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item socials-list__item--youtube">
+              <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Ютьюб</span>
+                <svg class="socials-list__icon" width="20" height="14">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="main-footer__copyright-wrapper">
+            <p class="main-footer__copyright">Разработано</p>
+            <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Сайт HTML Академии</span>
+              <svg class="main-footer__copyright-logo" width="27" height="34">
+                <use xlink:href="#logo-htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-    <section class="popup popup--failure">
+    <section class="popup popup--nojs popup--failure">
       <h2 class="visually-hidden">Ошибка в заполнении полей формы</h2>
       <p class="popup-intro popup-intro--failure">Что-то пошло не так!</p>
       <p class="popup-content popup-content--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="button button--popup button--popup-failure" type="button">ОК</button>
     </section>
-    <section class="popup popup--success">
+    <section class="popup popup--nojs popup--success">
       <h2 class="visually-hidden">Успешная отправка отзыва</h2>
       <p class="popup-intro popup-intro--success">Ваш отзыв отправлен!</p>
       <p class="popup-content popup-content--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <button class="button button--popup button--popup-success" type="button">Закрыть окно</button>
     </section>
+
+    <script src="js/menu.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

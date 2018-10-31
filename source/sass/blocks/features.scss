@@ -146,7 +146,6 @@
   }
 
   .features__description {
-
     &--grey {
       padding-bottom: 0;
     }
@@ -154,7 +153,8 @@
 
   .features__picture-block {
     width: 512px;
-    height: 256px;
+    min-height: 256px;
+    overflow: hidden;
 
     &--bridge {
       order: -1;
@@ -170,18 +170,16 @@
 @media (min-width: $desktop-width) {
   .features__slogan {
     margin-bottom: 32px;
-    padding: 0 300px
+    padding: 0 300px;
   }
 
   .features__item {
-
     &--grey {
       padding-bottom: 15px;
     }
   }
 
   .features__heading {
-
     &--blue {
       padding: 0 50px;
     }

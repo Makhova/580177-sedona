@@ -9,7 +9,7 @@
 
   <body class="page-body">
     <div style="display: none">
-     <include src="build/img/sprite.svg"></include>
+      <include src="build/img/sprite.svg"></include>
     </div>
 
     <div class="container container--page-body">
@@ -22,9 +22,12 @@
           </picture>
         </a>
         <nav class="main-header__nav main-nav">
-          <button class="main-nav__button main-nav__button--open" type="button"><span class="visually-hidden">Открыть меню</span>
-            <svg class="menu-icon" width="23" height="22">
+          <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span>
+            <svg class="main-nav__menu-icon" width="23" height="22">
               <use xlink:href="#icon-menu"></use>
+            </svg>
+            <svg width="23" height="22">
+              <use class="main-nav__icon-cross" xlink:href="#icon-cross"></use>
             </svg>
           </button>
           <ul class="main-nav__menu menu-list">
@@ -41,14 +44,8 @@
               <a class="menu-list__link" href="#">HTMLAcademy</a>
             </li>
           </ul>
-          <button class="main-nav__button main-nav__button--close" type="button"><span class="visually-hidden">Закрыть меню</span>
-            <svg width="23" height="22">
-              <use class="icon-cross" xlink:href="#icon-cross"></use>
-            </svg>
-          </button>
         </nav>
       </header>
-
       <main class="page-body__main">
         <div class="container container--photos">
           <h1 class="page-heading page-heading--photos-heading">Фото и видео</h1>
@@ -89,8 +86,8 @@
                       </div>
                       <span class="photo-list__like-number">143</span>
                     </figcaption>
-                </figure>
-              </div>
+                  </figure>
+                </div>
               </li>
               <li class="photo-list__item">
                 <div class="container container--photo-item">
@@ -136,75 +133,77 @@
               <p class="video-teaser">Всё ещё сомневаетесь?</p>
               <p class="video-intro">Смотрите видеопрезентацию - и скорее за билетами, пока они не подорожали в очередной раз!</p>
             </div>
-              <p class="video__video-block">
-                <picture class="video__clip">
-                  <source media="(min-width: 1280px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-                  <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Кадр из видео о Седоне">
-                </picture>
-                <div class="video__control-panel">
-                  <div class="video__controls">
-                    <div class="video__scale">
-                      <div class="video__toggle" tabindex="0"></div>
-                    </div>
+            <div class="video__video-block">
+              <picture class="video__clip">
+                <source media="(min-width: 1280px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Кадр из видео о Седоне">
+              </picture>
+              <div class="video__control-panel">
+                <div class="video__controls">
+                  <div class="video__scale">
+                    <div class="video__toggle" tabindex="0"></div>
                   </div>
-                  <button class="video__buttons video__buttons--replay">
-                    <svg width="20" height="20">
-                      <use xlink:href="#icon-video-replay"></use>
-                    </svg>
-                  </button>
-                  <button class="video__buttons video__buttons--subtitles">
-                    <svg width="32" height="20">
-                      <use xlink:href="#icon-video-subtitles"></use>
-                    </svg>
-                  </button>
-                  <button class="video__buttons video__buttons--fullscreen">
-                    <svg width="20" height="20">
-                      <use xlink:href="#icon-video-fullscreen"></use>
-                    </svg>
-                  </button>
                 </div>
-              </p>
+                <button class="video__buttons video__buttons--replay">
+                  <svg width="20" height="20">
+                    <use xlink:href="#icon-video-replay"></use>
+                  </svg>
+                </button>
+                <button class="video__buttons video__buttons--subtitles">
+                  <svg width="32" height="20">
+                    <use xlink:href="#icon-video-subtitles"></use>
+                  </svg>
+                </button>
+                <button class="video__buttons video__buttons--fullscreen">
+                  <svg width="20" height="20">
+                    <use xlink:href="#icon-video-fullscreen"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </section>
         </div>
-        </main>
-
-        <footer class="page-body__footer main-footer">
-          <div class="container container--footer">
-            <p class="main-footer__hashtag">#VisitSedona</p>
-            <ul class="main-footer__socials socials-list">
-              <li class="socials-list__item socials-list__item--twitter">
-                <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Твиттер</span>
-                  <svg class="socials-list__icon" width="20" height="14">
-                    <use xlink:href="#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials-list__item socials-list__item--facebook">
-                <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Фейсбук</span>
-                  <svg class="socials-list__icon socials-list__icon--facebook" width="9" height="18">
-                    <use xlink:href="#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials-list__item socials-list__item--youtube">
-                <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Ютьюб</span>
-                  <svg class="socials-list__icon" width="20" height="14">
-                    <use xlink:href="#icon-youtube"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <div class="main-footer__copyright-wrapper">
-              <p class="main-footer__copyright">Разработано</p>
-              <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Сайт HTML Академии</span>
-                <svg class="main-footer__copyright-logo" width="27" height="34">
-                  <use xlink:href="#logo-htmlacademy"></use>
+      </main>
+      <footer class="page-body__footer main-footer">
+        <div class="container container--footer">
+          <p class="main-footer__hashtag">#VisitSedona</p>
+          <ul class="main-footer__socials socials-list">
+            <li class="socials-list__item socials-list__item--twitter">
+              <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Твиттер</span>
+                <svg class="socials-list__icon" width="20" height="14">
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
-            </div>
+            </li>
+            <li class="socials-list__item socials-list__item--facebook">
+              <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Фейсбук</span>
+                <svg class="socials-list__icon socials-list__icon--facebook" width="9" height="18">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item socials-list__item--youtube">
+              <a class="socials-list__link socials-list__link" href="#"><span class="visually-hidden">Ютьюб</span>
+                <svg class="socials-list__icon" width="20" height="14">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="main-footer__copyright-wrapper">
+            <p class="main-footer__copyright">Разработано</p>
+            <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Сайт HTML Академии</span>
+              <svg class="main-footer__copyright-logo" width="27" height="34">
+                <use xlink:href="#logo-htmlacademy"></use>
+              </svg>
+            </a>
           </div>
-        </footer>
+        </div>
+      </footer>
     </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

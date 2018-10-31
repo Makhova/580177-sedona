@@ -1,15 +1,18 @@
 .popup {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 25%;
   left: 50%;
-  display: none;
   padding: 20px;
   padding-top: 45px;
   width: 280px;
   transform: translateX(-50%);
   text-align: center;
   background-color: $white;
-  box-shadow: 0 7px 15px 0;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .popup-intro {

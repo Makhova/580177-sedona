@@ -1,0 +1,18 @@
+@mixin heading-font {
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+@mixin heading-font-tablet {
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+@mixin paragraph-font {
+  line-height: 21px;
+  font-size: 14px;
+}

@@ -1,58 +1,47 @@
 @media (max-width: $mobile-width-only) {
   .main-nav {
-  position: relative;
-  min-height: 0;
-  padding-bottom: 55px;
-  background-color: $white;
-  order: -1;
+    position: relative;
+    padding-bottom: 55px;
+    background-color: $white;
+    order: -1;
 
-  &--opened .menu-list {
-    display: block;
+    &--opened .menu-list {
+      display: block;
+    }
+
+    &--opened .main-nav__button {
+      top: 17px;
+    }
+
+    &--opened .main-nav__menu-icon {
+      display: none;
+    }
+
+    &--opened .main-nav__icon-cross {
+      display: block;
+      fill: $white;
+    }
   }
 
-  &--opened .main-nav__button {
-    top: 17px;
-  }
-
-  &--opened .menu-icon {
-    display: none;
-  }
-
-  &--opened .icon-cross {
-    fill: $white;
-  }
-
-  &--closed .menu-list {
-    display: none;
-  }
-
-  &--closed .main-nav__button {
+  .main-nav__button {
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
     bottom: 17px;
+    padding: 0;
+    border: none;
+    width: 23px;
+    height: 21px;
+    background-repeat: no-repeat;
   }
 
-  &--closed .menu-icon {
+  .main-nav__menu-icon {
     fill: $blue;
   }
 
-  &--closed .icon-cross {
+  .main-nav__icon-cross {
     display: none;
   }
-  }
-}
-
-.main-nav__button {
-  background-color: transparent;
-  position: absolute;
-  right: 20px;
-  padding: 0;
-  border: none;
-  width: 23px;
-  height: 21px;
-  background-repeat: no-repeat;
-}
-
-.main-nav__button .icon-cross {
-  fill: #ffffff;
 }
 
 .main-nav__menu {
